@@ -1,6 +1,57 @@
-.contact-list {
+.contact {
     background-color: #F9FAFF;
-    padding: 45px 25px 25px 25px;
+    padding: 45px 25px 100px 25px;
+}
+
+@media (min-width: 1440px) {
+    .contact__wrapper {
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    input[type="text"] {
+        width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .form__phone {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 1440px) {
+    .feedback__container {
+        width: 595px;
+        padding: 59px 70px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1440px) {
+    .feedback__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 1440px) {
+    .form__textarea {
+        width: 100%;
+        height: 96px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .contact__items {
+        padding-top: 27px;
+        padding-right: 238px;
+    }
 }
 
 .contact-item {
@@ -63,7 +114,7 @@
     background-image: url(../images/map.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 483px;
     width: 100%;
 }
