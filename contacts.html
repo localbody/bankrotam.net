@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet " href="./css/contacts.css">
+
 </head>
 
 <body>
@@ -16,32 +18,34 @@
         <div class="header__container">
 
             <div class="logo">
-                Bankrotam.net
+                <h3 class="logo__title">
+                    Bankrotam.net
+                </h3>
+                <h4 class="logo__subtitle">
+                    Всё о банкротстве физических и&nbsp;юридических лиц
+                </h4>
             </div>
-            <h4 class="header__title">
-                Всё о банкротстве физических и&nbsp;юридических лиц
-            </h4>
             <hr class="menu-line">
             <button class="header__menu-btn">Меню</button>
             <nav class="header__menu">
                 <ul class="menu__items">
                     <li class="menu__item main--link">
-                        <a class="menu__link" href="">Главная</a>
+                        <a class="menu__link" href="index.html">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Физическим лицам</a>
+                        <a class="menu__link" href="individual.html">Физическим лицам</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="">Юридических лицам</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Вопрос-ответ</a>
+                        <a class="menu__link" href="faq.html">Вопрос-ответ</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Отзывы клиентов</a>
+                        <a class="menu__link" href="reviews.html">Отзывы клиентов</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="">Контакты</a>
+                        <a class="menu__link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
 
@@ -49,9 +53,18 @@
 
                 <a class="header__mail" href="">info@bankrotam.net</a>
 
-                <a class="btn bg--blue" style="width: 159px;" href="">Подать заявку</a>
+                <a class="btn bg--blue btn__header" href="">Подать заявку</a>
             </nav>
             <div class="header__social">
+
+                <div class="header__social-wrapper">
+                    <a class="header__social-phone" href="">+7 567 456 44 55</a>
+
+                    <a class="header__social-mail" href="">info@bankrotam.net</a>
+                </div>
+
+                <a class="btn bg--blue header__social-btn" href="">Подать заявку</a>
+
                 <ul class="social__list">
                     <li class="social__item">
                         <a class="social__link" href="">
@@ -193,7 +206,7 @@
 
     <footer class="footer">
 
-        <div class="container">
+        <div class="footer__wrapper">
             <div class="footer__header">
                 <div class="footer__logo">
                     Банкротство в Москве
@@ -201,15 +214,14 @@
                 <div class="footer__title">
                     Банкротство лиц. Ликвидация организаций. Арбитражный управляющий
                 </div>
+
+                <a class="btn bg--blue footer__btn" href="">Освободиться от долгов</a>
             </div>
-
-            <a class="btn bg--blue " href="">Освободиться от долгов</a>
-
 
             <div class="submenu">
                 <ul>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="">Физическим лицам</a>
+                        <a class="submenu--link" href="individual.html">Физическим лицам</a>
                     </li>
                     <li class="submenu--item">
                         <a class="submenu--sublink" href="">Закон о банкротстве</a>
@@ -223,7 +235,9 @@
                     <li class="submenu--item">
                         <a class="submenu--sublink" href="">Цена банкротства</a>
                     </li>
-                    <li class="submenu--item submenu--item__subtitle">
+                </ul>
+                <ul>
+                    <li class="submenu--item">
                         <a class="submenu--link" href="">Юридическим лицам</a>
                     </li>
                     <li class="submenu--item">
@@ -244,29 +258,31 @@
             <div class="submenu--mini">
                 <ul class="submenu__items">
                     <li class="submenu--item">
-                        <a class="submenu--link" href="">FAQ</a>
+                        <a class="submenu--link" href="faq.html">FAQ</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="">Отзывы</a>
+                        <a class="submenu--link" href="reviews.html">Отзывы</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="">Контакты</a>
+                        <a class="submenu--link" href="contacts.html">Контакты</a>
                     </li>
                 </ul>
             </div>
+        </div>
 
+        <div class="copyright">
             <div class="copy">
                 2020 Москва. Банкротство юридических и физических лиц
             </div>
             <div class="madein">
                 Разработано в студии Dublin Group
             </div>
-
         </div>
+
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
