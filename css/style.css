@@ -170,7 +170,7 @@ body {
     text-align: center;
     transition: all 0.5s;
     /* opacity: 0; */
-    pointer-events: none;
+    /* pointer-events: none; */
     transform: translateX(100%);
 }
 
@@ -394,6 +394,15 @@ body {
     }
 }
 
+@media (min-width:1440px) {
+    .intro__wrapper--etc {
+        padding-top: 30px;
+        max-width: 1170px;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
 .intro__btn {
     width: 186px;
 }
@@ -447,7 +456,8 @@ body {
 .intro--etc {
     height: 275px;
     background-image: url(../images/b.svg);
-    background-position: right top;
+    background-position-x: 40vw;
+    background-position-y: -15vh;
     background-repeat: no-repeat;
     text-align: left;
 }
