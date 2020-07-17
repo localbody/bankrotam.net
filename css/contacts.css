@@ -1,0 +1,69 @@
+.contact-list {
+    background-color: #F9FAFF;
+    padding: 45px 25px 25px 25px;
+}
+
+.contact-item {
+    /*  */
+    margin-bottom: 50px;
+}
+
+.contact-title {
+    font-size: 18px;
+}
+
+.contact-content {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 26px;
+    color: #404159;
+}
+
+.feedback__check-label {
+    display: flex;
+}
+
+.feedback__check-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.feedback__check-box {
+    width: 19px;
+    height: 19px;
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.feedback__check-border {
+    fill: none;
+    stroke-width: 1px;
+    stroke: #232780;
+}
+
+.feedback__check-mark {
+    fill: none;
+}
+
+.feedback__check-input:checked+* .feedback__check-mark {
+    fill: #232780;
+}
+
+.feedback__label-text {
+    color: #9293A4;
+    font-size: 14px;
+    line-height: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.map {
+    background-image: url(../images/map.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 483px;
+    width: 100%;
+}

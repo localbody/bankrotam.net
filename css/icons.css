@@ -1,0 +1,71 @@
+.icon-shield {
+    display: inline;
+    position: relative;
+    margin-left: 2em;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.icon-shield::before {
+    content: "";
+    background-image: url(../images/shield.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 20px;
+    position: absolute;
+    top: -2px;
+    left: -2em;
+}
+
+
+/* 
+.icon-ok {
+    display: inline;
+    position: relative;
+    margin-left: 2em;
+    white-space: nowrap;
+}
+
+.icon-ok::before {
+    content: "";
+    background-image: url(../images/ok.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: -2em;
+} */
+
+.icon-ok {
+    background-image: url(../images/ok.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    flex-shrink: 0;
+}
+
+.icon-cancel {
+    background-image: url(../images/cancel.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    flex-shrink: 0;
+}
+
+.icon-asteriks {
+    flex-shrink: 0;
+    background-image: url(../images/asteriks.svg);
+    /* background-position-y: 5px; */
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 19px;
+    /* margin-right: 20px; */
+}

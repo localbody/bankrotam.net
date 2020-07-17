@@ -1,0 +1,47 @@
+.color--white {
+    color: white;
+}
+
+.color--dark {
+    color: #404159;
+}
+
+.color--light {
+    color: #A1A2AE;
+}
+
+.color--yellow {
+    color: #E6C67A;
+}
+
+.color--gray {
+    color: #9293A4;
+}
+
+.bg--yellow {
+    background-color: #E6C67A;
+}
+
+.bg--white {
+    background-color: white;
+}
+
+.bg--light {
+    background-color: #F9FAFF;
+}
+
+.bg--blue {
+    background-color: #232780;
+}
+
+.bg--lightblue {
+    background-color: #F8F8FC;
+}
+
+.bg--lightgray {
+    background-color: #E5E5E5;
+}
+
+.bg--transparent {
+    background-color: transparent;
+}

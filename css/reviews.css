@@ -1,0 +1,25 @@
+.reviews-list {
+    padding: 32px 25px 70px 25px;
+    background-color: #F9FAFF;
+}
+
+.reviews-item {
+    background-color: white;
+    padding: 45px 25px 35px 25px;
+    margin-bottom: 15px;
+}
+
+.reviews-title {
+    color: #404159;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.reviews-text {
+    margin-top: 25px;
+}
+
+.reviews-date {
+    margin-top: 25px;
+}
