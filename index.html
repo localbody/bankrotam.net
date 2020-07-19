@@ -111,7 +111,7 @@
                 <h2 class="intro__subtitle">
                     Банкротство лиц. Ликвидация организаций. Арбитражный управляющий
                 </h2>
-                <a class="btn bg--yellow intro__btn" href="">Оставить заявку</a>
+                <a class="btn bg--yellow intro__btn popup-link" href="">Оставить заявку</a>
 
             </div>
 
@@ -1230,6 +1230,46 @@
         </div>
 
     </footer>
+
+
+    <div id="popup" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <a class="popup__close" href=""></a>
+                <h2 class="popup__title">Задайте вопрос специалисту</h2>
+                <p class="popup__subtitle">Задайте их и запишитесь на бесплатную консультацию!</p>
+                <form class="form feedback__form--popup" action="">
+
+                    <input class="form__name form__name--popup bg--lightblue" type="text" placeholder="Ваше имя" />
+
+                    <div class="form__phone form__phone--popup bg--lightblue">
+                        <div class="flag"></div>
+                        <div class="prefix">+7</div>
+                        <input class="phone bg--lightblue" type="text" placeholder="(999) 999-99-99">
+                    </div>
+
+                    <textarea class="form__textarea bg--lightblue" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+
+                    <label class="feedback__check-label">
+                            <input class="feedback__check-input" type="checkbox">
+                            <svg class="feedback__check-box" viewBox="0 0 11 11">
+                                 <rect class="feedback__check-border" width="11" height="11"></rect>
+                                <rect class="feedback__check-mark" x="2" y="2" width="7" height="7"></rect>
+                            </svg>
+                            <p class="feedback__label-text">
+                                Я даю согласие на обработку персональных данных и ознакомлен(а) с Политикой конфиденциальности
+                            </p>
+                        </label>
+
+                    <button class="form__btn btn bg--blue">Отправить</button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>

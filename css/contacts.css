@@ -70,48 +70,6 @@
     color: #404159;
 }
 
-.feedback__check-label {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 47px;
-}
-
-.feedback__check-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
-.feedback__check-box {
-    width: 19px;
-    height: 19px;
-    margin-top: 5px;
-    flex-shrink: 0;
-}
-
-.feedback__check-border {
-    fill: none;
-    stroke-width: 1px;
-    stroke: #232780;
-}
-
-.feedback__check-mark {
-    fill: none;
-}
-
-.feedback__check-input:checked+* .feedback__check-mark {
-    fill: #232780;
-}
-
-.feedback__label-text {
-    color: #9293A4;
-    font-size: 14px;
-    line-height: 18px;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
 .map {
     background-image: url(../images/map.jpg);
     background-position: center;

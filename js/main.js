@@ -10,3 +10,30 @@ $('.faq-title').click(
         $('.faq-text').not($(this).next()).slideUp(300)
         $(this).toggleClass('faq-title--active').next().slideToggle(300)
     })
+
+// popup
+
+const popups = $('.popup-link')
+
+if (popups.length > 0) {
+    // нашли попап-линки
+
+    for (let index = 0; index < popups.length; index++) {
+        const element = popups[index];
+
+        // element.addEventListener('click', function(e) {
+        //     alert(1)
+        //     e.preventDefault()
+        // })
+
+        $(element).click(function(e) {
+            $('.popup').addClass('open')
+            e.preventDefault()
+        })
+    }
+}
+
+$('.popup__close').click(function(e) {
+    $('.popup').removeClass('open')
+    e.preventDefault()
+})
