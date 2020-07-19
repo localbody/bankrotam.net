@@ -72,6 +72,8 @@
 
 .feedback__check-label {
     display: flex;
+    margin-top: 30px;
+    margin-bottom: 47px;
 }
 
 .feedback__check-input {

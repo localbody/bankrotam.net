@@ -1,6 +1,19 @@
+/*  */
+
+.intro__wrapper--faq {
+    margin-top: 30px;
+}
+
 .faq-list {
     padding: 32px 25px 70px 25px;
     background-color: #F9FAFF;
+}
+
+@media(min-width: 1440px) {
+    .faq__wrapper {
+        width: 1170px;
+        margin: 0 auto;
+    }
 }
 
 .faq-item {
