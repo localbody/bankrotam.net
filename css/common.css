@@ -55,7 +55,11 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #9293A4;
+    font-variant-numeric: oldstyle-nums;
+    font-feature-settings: "onum";
     /* letter-spacing: -0.7px; */
+    margin: 0;
+    touch-action: manipulation;
 }
 
 h2 {
