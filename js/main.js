@@ -37,3 +37,15 @@ $('.popup__close').click(function(e) {
     $('.popup').removeClass('open')
     e.preventDefault()
 })
+
+const maxScroll = 1585 - $(document).width()
+
+$('.stages__items').on('mousewheel', function(event) {
+
+    var scrollLeft = $('.stages__items').scrollLeft()
+    var scrollValue = scrollLeft - (event.deltaY * event.deltaFactor)
+    $('.stages__items').scrollLeft(scrollValue)
+    if ((scrollLeft > 0) && (scrollLeft < maxScroll)) {
+        event.preventDefault()
+    }
+});

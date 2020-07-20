@@ -525,6 +525,14 @@
     overflow-x: scroll;
     margin-right: -25px;
     margin-bottom: 50px;
+    padding-bottom: 25px;
+}
+
+@media (min-width:1920px) {
+    .stages__items {
+        display: flex;
+        overflow-x: hidden;
+    }
 }
 
 @media (min-width:1440px) {
@@ -766,6 +774,7 @@
 @media (min-width: 1440px) {
     .debt__block {
         display: flex;
+        align-items: center;
     }
 }
 
@@ -778,6 +787,12 @@
 
 .debt__headline {
     margin-top: 32px;
+}
+
+@media (min-width: 1440px) {
+    .debt__headline {
+        margin-top: 0;
+    }
 }
 
 
