@@ -41,6 +41,15 @@
     left: -2em;
 } */
 
+.icon-shield2 {
+    background-image: url(../images/shield.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17px;
+    flex-shrink: 0;
+}
+
 .icon-ok {
     background-image: url(../images/ok.svg);
     background-repeat: no-repeat;

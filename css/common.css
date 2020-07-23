@@ -231,6 +231,10 @@ input[type="text"] {
     }
 }
 
+.wrap-list--items {
+    flex-wrap: wrap;
+}
+
 .list-item {
     display: flex;
     flex-wrap: wrap;
@@ -278,6 +282,10 @@ input[type="text"] {
     padding-bottom: 20px;
 }
 
+.mb-50 {
+    margin-bottom: 50px !important;
+}
+
 .h-130 {
     height: 130px;
 }
@@ -305,6 +313,11 @@ input[type="text"] {
 
 .w--248 {
     width: 248px;
+}
+
+.w--100pr {
+    width: 100%;
+    margin-bottom: 50px;
 }
 
 
@@ -379,6 +392,8 @@ input[type="text"] {
     line-height: 14px;
     margin-left: 31px;
     width: 182px;
+    color: #9293A4;
+    font-weight: 400;
 }
 
 @media (min-width: 1440px) {
@@ -774,6 +789,7 @@ input[type="text"] {
 
 .feedback__title {
     font-size: 22px;
+    margin-bottom: 12px;
 }
 
 .feedback__text {
@@ -1134,3 +1150,124 @@ input[type="text"] {
 
 
 /* popup */
+
+@media(min-width: 1440px) {
+    .list__items {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (min-width:1440px) {
+    .wrap {
+        flex-wrap: wrap;
+    }
+}
+
+.h--110 {
+    height: 110px;
+}
+
+
+/* stages */
+
+.stages {
+    padding-top: 93px;
+    padding-bottom: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+@media (min-width:1440px) {
+    .stages__wrapper {
+        width: 1170px;
+        margin: 0 auto;
+    }
+}
+
+.stages__title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.stages__text {
+    margin-bottom: 60px;
+}
+
+.stages__items {
+    display: flex;
+    overflow-x: scroll;
+    margin-right: -25px;
+    margin-bottom: 50px;
+    padding-bottom: 25px;
+}
+
+@media (min-width:1920px) {
+    .stages__items {
+        display: flex;
+        overflow-x: hidden;
+    }
+}
+
+@media (min-width:1440px) {
+    .stages__items {
+        margin-right: calc(585px - 50vw);
+    }
+}
+
+.stage__item {
+    min-width: 312px;
+}
+
+.stage__item--title {
+    font-weight: 600;
+    line-height: 19px;
+    color: #404159;
+    margin-bottom: 15px;
+}
+
+.stage__item--text {
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 60px;
+}
+
+.stage__line {
+    border-top: 1px solid #E6E6EC;
+    position: relative;
+    top: -60px;
+}
+
+.stage__circle {
+    position: absolute;
+    top: -19px;
+    width: 39px;
+    height: 39px;
+    background-color: white;
+    border: 1px solid #E6E6EC;
+    border-radius: 100%;
+}
+
+.stage__point {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: #E5C67A;
+}
+
+.stage__item--subtitle {
+    font-size: 14px;
+    line-height: 16px;
+    color: #E5C67A;
+    margin-bottom: 98px;
+}
+
+.stages__info {
+    margin-bottom: 60px;
+}
+
+
+/* stages */
