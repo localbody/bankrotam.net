@@ -42,10 +42,17 @@ const maxScroll = 1585 - $(document).width()
 
 $('.stages__items').on('mousewheel', function(event) {
 
+    console.log(1)
+
     var scrollLeft = $('.stages__items').scrollLeft()
     var scrollValue = scrollLeft - (event.deltaY * event.deltaFactor)
     $('.stages__items').scrollLeft(scrollValue)
     if ((scrollLeft > 0) && (scrollLeft < maxScroll)) {
         event.preventDefault()
     }
+});
+
+
+$(function() {
+    $(".phone").mask("+7 (999) 999-99-99");
 });

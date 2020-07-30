@@ -18,14 +18,17 @@
     <header class="header">
 
         <div class="header__container">
-
             <div class="logo">
-                <h3 class="logo__title">
+
+
+                <a class="logo__link" href="index.html">
                     Bankrotam.net
-                </h3>
-                <h4 class="logo__subtitle">
+                </a>
+
+                <p class="logo__subtitle">
                     Всё о банкротстве физических и&nbsp;юридических лиц
-                </h4>
+                </p>
+
             </div>
             <hr class="menu-line">
             <button class="header__menu-btn">Меню</button>
@@ -35,7 +38,7 @@
                         <a class="menu__link" href="index.html">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="individual.html">Физическим лицам</a>
+                        <a class="menu__link menu__link" href="individual.html">Физическим лицам</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link" href="entity.html">Юридических лицам</a>
@@ -47,7 +50,7 @@
                         <a class="menu__link" href="reviews.html">Отзывы клиентов</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="contacts.html">Контакты</a>
+                        <a class="menu__link menu__link--active">Контакты</a>
                     </li>
                 </ul>
 
@@ -104,9 +107,9 @@
                 <h1 class="intro__title intro__title--etc">
                     Контактная информация bankrotam.net
                 </h1>
-                <h2 class="intro__subtitle intro__subtitle--etc">
+                <p class="intro__subtitle intro__subtitle--etc">
                     Контакты и обратная связь по банкротству физических лиц
-                </h2>
+                </p>
             </div>
         </div>
 
@@ -163,9 +166,9 @@
                 <div class="feedback">
                     <div class="feedback__container bg--white">
 
-                        <h3 class="feedback__title title">
+                        <p class="feedback__title title">
                             Остались вопросы?
-                        </h3>
+                        </p>
 
                         <p class="feedback__text">
                             Задайте их и запишитесь на бесплатную консультацию!
@@ -177,8 +180,8 @@
 
                             <div class="form__phone bg--lightblue">
                                 <div class="flag"></div>
-                                <div class="prefix">+7</div>
-                                <input class="phone bg--lightblue" type="text" placeholder="(999) 999-99-99">
+                                <!-- <div class="prefix">+7</div> -->
+                                <input class="phone bg--lightblue" type="text" placeholder="+7 (999) 999-99-99">
                             </div>
 
                             <input class="form__message bg--lightblue" type="text" placeholder="Ваше сообщение" />
@@ -218,9 +221,9 @@
 
         <div class="footer__wrapper">
             <div class="footer__header">
-                <div class="footer__logo">
+                <a class="footer__logo-link" href="index.html">
                     Банкротство в Москве
-                </div>
+                </a>
                 <div class="footer__title">
                     Банкротство лиц. Ликвидация организаций. Арбитражный управляющий
                 </div>
@@ -291,8 +294,11 @@
 
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
+</html>
 
 </html>
