@@ -7,22 +7,26 @@
             {
                 "n" : 1,
                 "question" : "Введите ваш E-Mail",
-                "type" : "input_text"
+                "type" : "input_text",
+                "placeholder" : "Ваш E-Mail"
             },
             {
                 "n" : 2,
                 "question" : "Название компании",
-                "type" : "input_text"
+                "type" : "input_text",
+                "placeholder" : "Название Вашей компании"
             },
             {
                 "n" : 3,
                 "question" : "Ваш регион?",
-                "type" : "input_text"
+                "type" : "input_text",
+                "placeholder" : "Ваш регион"
             },
             {
                 "n" : 4,
                 "question" : "Какова цель банкротства и причина закрытия компании?",
-                "type" : "input_text"
+                "type" : "input_text",
+                "placeholder" : "Ваша цель и причина банкротства"
             },
             {
                 "n" : 5,
@@ -77,7 +81,8 @@
             {
                 "n" : 15,
                 "question" : "Являлись ли учредители поручителями по кредитам? Планируется ли погашать эти кредиты? Имеются ли решения судов по данной задолженности? Есть ли дружественные кредиторы (предприятия, с которыми осуществлялась деятельность и перед которыми формально есть или может быть задолженность. Имеются ли решения судов по данной задолженности?)",
-                "type" : "input_text"
+                "type" : "input_text",
+                "placeholder" : ""
             },
             {
                 "n" : 16,
@@ -216,7 +221,7 @@
                     case 'input_text':
                         echo '
                             <li class="quiz__answers-item">
-                            <input class="form__name bg--light" type="text" name="answer" id="answer" placeholder="">
+                            <input class="quiz--input bg--light" type="text" name="answer" id="answer" placeholder="'.$value->placeholder.'">
                             </li>
                         ';
                         break;

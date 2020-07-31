@@ -122,7 +122,8 @@ input[type="text"] {
 }
 
 .form__message,
-.form__name {
+.form__name,
+.quiz--input {
     padding-left: 25px;
     margin-bottom: 15px;
     width: 100%;

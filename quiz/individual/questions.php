@@ -110,7 +110,7 @@
                     case 'input_text':
                         echo '
                             <li class="quiz__answers-item">
-                            <input class="form__name bg--light" type="text" name="answer" id="answer" placeholder="">
+                            <input class="quiz--input bg--light" type="text" name="answer" id="answer" placeholder="'.$value->placeholder.'">
                             </li>
                         ';
                         break;
