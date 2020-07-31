@@ -92,16 +92,16 @@
                   </p>
                 
                   <h2 class="quiz__title">
-                    Анкета банкрота — вопросы для процедуры банкротства
+                  '. $value->question .'
                   </h2>
                 
                   <p class="quiz__question">
-                    '. $value->question .'
+                    '. $value->description .'
                   </p>
                   
                   <form action="index.php" class="quiz__form">
                     <input type="hidden" name="question" id="question" value="'.($numberQuestion + 1). '">
-                    <input type="hidden" name="questions" id="questions" value="34">
+                    <input type="hidden" name="questions" id="questions" value="6">
                 
                     <ul class="quiz__answers-list">
                 ';
