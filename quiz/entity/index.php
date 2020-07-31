@@ -129,9 +129,9 @@
                     
                         <?php 
 
-                            echo "<pre>";
-                            var_dump($_GET);
-                            echo "</pre>";
+                            // echo "<pre>";
+                            // var_dump($_GET);
+                            // echo "</pre>";
 
                             if (isset($_GET["question"])) {
                                 $question = $_GET["question"];
@@ -139,7 +139,7 @@
                             else {
                                 $question = 1;
                             }
-                            $nextQuestion = $question++;
+                            $nextQuestion = $question + 1;
 
                             require_once("q". $question . ".inc.php");
                         ?>

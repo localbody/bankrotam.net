@@ -1,3 +1,5 @@
+
+
 <p class="quiz__subtitle">
     Вопрос <?=$question?>
 </p>
