@@ -71,16 +71,10 @@ $(".quiz__progressbar-process").attr(
 
 $(".quiz__subtitle").html("Вопрос " + question)
 
-const actionLink = question != questions ? (parseInt(question)+1) + ".html" : "result.html"
-
 if (question == questions) 
 {
     $(".quiz__form-btn-next").html("Завершить опрос")
 }
-
-$(".quiz__form-btn-next").click( function() {
-    $(".quiz__form").attr("action", actionLink+"#quiz")
-} )
 
 const href = document.location.href
 const anchor = href.substr(href.lastIndexOf('#') + 1)

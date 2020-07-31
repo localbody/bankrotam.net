@@ -13,12 +13,6 @@
 
 <body>
 
-    <?php 
-    
-        phpinfo();
-
-    ?>
-
     <header class="header">
         <div class="header__container">
 
@@ -128,31 +122,21 @@
                         <div class="quiz__progressbar-process" style="grid-column: 1 / 99 ;"></div>
                     </div>
                     <div class="quiz__progressbar-ready">Готово: <span class="quiz__progressbar-percent">3%</span></div>
-                    <input type="hidden" name="question" id="question" value="1">
-                    <input type="hidden" name="questions" id="questions" value="34">
                     <div class="quiz__progressbar-count">Вопрос ? из ?</div>
                 </div>
 
                 <div class="quiz__qa">
                     
-                    <p class="quiz__subtitle">
-                        Вопрос ?
-                    </p>
+                        <?php 
+                            if (isset($_GET["question"])) {
+                                $question = $_GET["question"];
 
-                    <h2 class="quiz__title">
-                        Анкета банкрота — вопросы для процедуры банкротства
-                    </h2>
-
-                    <p class="quiz__question">
-                        Введите ваш E-Mail
-                    </p>
-
-                    <form action="" class="quiz__form">
-                        <ul class="quiz__answers-list">
-                            <li class="quiz__answers-item">
-                                <input class="form__name bg--light" type="email" name="email" id="email" placeholder="Ваш E-Mail">
-                            </li>
-                        </ul>
+                            }
+                            else {
+                                $question = 1;
+                            }
+                            require_once("q". $question . ".inc.php");
+                        ?>
 
                         <div class="quiz__form-block">
                             <button class="btn bg--blue quiz__form-btn-next">Перейти к следующему вопросу</button>
