@@ -58,7 +58,7 @@ $(".stages__items").on("mousewheel", function (event) {
     }
 })
 
-const question = $("#question").val()
+const question = $("#question").val() - 1
 const questions = $("#questions").val()
 const ready = Math.round((99 / questions) * question)
 
