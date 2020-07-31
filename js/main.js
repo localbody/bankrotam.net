@@ -69,8 +69,6 @@ $(".quiz__progressbar-process").attr(
     "grid-column: 1 / " + ready + " ;"
 )
 
-$(".quiz__subtitle").html("Вопрос " + question)
-
 if (question == questions) 
 {
     $(".quiz__form-btn-next").html("Завершить опрос")

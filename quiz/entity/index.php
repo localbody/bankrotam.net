@@ -128,11 +128,6 @@
                 <div class="quiz__qa">
                     
                         <?php 
-
-                            echo "<pre>";
-                            var_dump($_GET);
-                            echo "</pre>";
-
                             if (isset($_GET["question"])) {
                                 $question = $_GET["question"];
                             }
