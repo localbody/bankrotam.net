@@ -130,12 +130,13 @@
                         <?php 
                             if (isset($_GET["question"])) {
                                 $question = $_GET["question"];
-
                             }
                             else {
                                 $question = 1;
                             }
-                            require_once("q". $question++ . ".inc.php");
+                            $nextQuestion = $question++;
+
+                            require_once("q". $question . ".inc.php");
                         ?>
 
                         <div class="quiz__form-block">

@@ -11,7 +11,7 @@
 </p>
 
 <form action="index.php" class="quiz__form">
-    <input type="hidden" name="question" id="question" value="<?=$question?>">
+    <input type="hidden" name="question" id="question" value="<?=$nextQuestion?>">
     <input type="hidden" name="questions" id="questions" value="34">
 
     <ul class="quiz__answers-list">
