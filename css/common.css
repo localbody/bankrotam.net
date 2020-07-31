@@ -114,6 +114,9 @@ input[type="text"] {
     input[type="text"] {
         width: unset;
     }
+    .quiz--input {
+        width: 100% !important;
+    }
 }
 
 .form {
