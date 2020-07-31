@@ -22,6 +22,11 @@
     background-color: #E6C67A;
 }
 
+.btn.bg--yellow:hover {
+    background-color: #E6C67Acc;
+    transition: all ease 0.5s;
+}
+
 .bg--white {
     background-color: white;
 }
@@ -32,6 +37,11 @@
 
 .bg--blue {
     background-color: #232780;
+}
+
+.btn.bg--blue:hover {
+    background-color: #232780cc;
+    transition: all ease 0.3s;
 }
 
 .bg--lightblue {

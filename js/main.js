@@ -13,25 +13,38 @@ $('.faq-title').click(
 
 // popup
 
-const popups = $('.popup-link')
+const popups__feedback = $('.popup__feedback-link')
+if (popups__feedback.length > 0) {
 
-if (popups.length > 0) {
-    // нашли попап-линки
 
-    for (let index = 0; index < popups.length; index++) {
-        const element = popups[index];
-
-        // element.addEventListener('click', function(e) {
-        //     alert(1)
-        //     e.preventDefault()
-        // })
+    for (let index = 0; index < popups__feedback.length; index++) {
+        const element = popups__feedback[index];
 
         $(element).click(function(e) {
-            $('.popup').addClass('open')
+            console.log(1)
+
+            $('.popup__feedback').addClass('open')
             e.preventDefault()
         })
     }
 }
+
+const popups__thanks = $('.popup__thanks-link')
+if (popups__thanks.length > 0) {
+    for (let index = 0; index < popups__thanks.length; index++) {
+        const element = popups__thanks[index];
+
+        $(element).click(function(e) {
+
+            // закроем другие попапы
+            $('.popup').removeClass('open')
+
+            $('.popup__thanks').addClass('open')
+            e.preventDefault()
+        })
+    }
+}
+
 
 $('.popup__close').click(function(e) {
     $('.popup').removeClass('open')

@@ -1,3 +1,39 @@
+* {
+    background-color: rgba(255, 0, 0, .2);
+}
+
+* * {
+    background-color: rgba(0, 255, 0, .2);
+}
+
+* * * {
+    background-color: rgba(0, 0, 255, .2);
+}
+
+* * * * {
+    background-color: rgba(255, 0, 255, .2);
+}
+
+* * * * * {
+    background-color: rgba(0, 255, 255, .2);
+}
+
+* * * * * * {
+    background-color: rgba(255, 255, 0, .2);
+}
+
+* * * * * * * {
+    background-color: rgba(255, 0, 0, .2);
+}
+
+* * * * * * * * {
+    background-color: rgba(0, 255, 0, .2);
+}
+
+* * * * * * * * * {
+    background-color: rgba(0, 0, 255, .2);
+}
+
 @import "../css/fonts/raleway/raleway.css";
 @import "../css/reset.css";
 @import "../css/normalize.css";
@@ -51,7 +87,8 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Raleway', 'Times New Roman', Times, serif;
+    /* font-family: 'Raleway', 'Times New Roman', Times, serif; */
+    font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #9293A4;
@@ -60,13 +97,6 @@ body {
     /* letter-spacing: -0.7px; */
     margin: 0;
     touch-action: manipulation;
-}
-
-h2 {
-    color: #BDBED9;
-    font-weight: 500;
-    font-size: 16px;
-    /* line-height: 22px; */
 }
 
 .btn {
@@ -102,6 +132,7 @@ textarea::placeholder {
     color: #A1A2AE;
 }
 
+input[type="email"],
 input[type="text"] {
     border-radius: 5px;
     border: none;
@@ -394,6 +425,8 @@ input[type="text"] {
     /* height: 29px; */
     font-size: 10px;
     line-height: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 31px;
     width: 182px;
     color: #9293A4;
@@ -509,6 +542,7 @@ input[type="text"] {
 
 .menu__items {
     margin-bottom: 81px;
+    padding: 0;
 }
 
 @media screen and (min-width: 1440px) {
@@ -540,6 +574,11 @@ input[type="text"] {
     margin-bottom: 5px;
 }
 
+.header__phone:hover {
+    color: #232780;
+    transition: all ease 0.3s;
+}
+
 .header__mail {
     font-size: 14px;
     line-height: 16px;
@@ -547,6 +586,11 @@ input[type="text"] {
     display: block;
     margin-bottom: 36px;
     text-decoration: none;
+}
+
+.header__mail:hover {
+    color: #232780;
+    transition: all ease 0.3s;
 }
 
 .btn__header {
@@ -563,7 +607,7 @@ input[type="text"] {
 }
 
 .header__social {
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
 @media (min-width: 1440px) {
@@ -573,8 +617,8 @@ input[type="text"] {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        max-width: 550px;
-        margin: 0 0 0 50px;
+        max-width: 585px;
+        /* margin: 0 0 0 50px; */
     }
 }
 
@@ -603,6 +647,11 @@ input[type="text"] {
     }
 }
 
+.header__social-phone:hover {
+    color: #232780;
+    transition: all ease 0.3s;
+}
+
 .header__social-mail {
     display: none;
     font-size: 16px;
@@ -614,6 +663,11 @@ input[type="text"] {
     .header__social-mail {
         display: block;
     }
+}
+
+.header__social-mail:hover {
+    color: #232780;
+    transition: all ease 0.3s;
 }
 
 .header__social-btn {
@@ -680,11 +734,15 @@ input[type="text"] {
 
 @media (min-width:1440px) {
     .intro__wrapper {
-        padding-top: 100px;
+        padding-top: 50px;
         max-width: 1170px;
         margin: 0 auto;
         text-align: left;
     }
+}
+
+.intro__wrapper--etc {
+    font-size: 42px;
 }
 
 @media (min-width:1440px) {
@@ -721,21 +779,29 @@ input[type="text"] {
 
 .intro__title {
     font-weight: 600;
-    font-size: 38px;
-    line-height: 45px;
+    font-size: 42px;
+    line-height: 55px;
     margin-bottom: 15px;
+}
+
+.intro__title-link {
+    text-decoration: underline;
+    color: white;
 }
 
 .intro__title--etc,
 .intro__title--quiz {
     text-align: left;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 46px;
     line-height: 38px;
 }
 
 .intro__subtitle {
     margin-bottom: 32px;
+    color: #BDBED9;
+    font-weight: 500;
+    font-size: 16px;
 }
 
 .intro__subtitle--quiz {
@@ -982,7 +1048,7 @@ input[type="text"] {
 
 @media (min-width: 1440px) {
     .submenu--mini {
-        width: 100px;
+        /* max-width: 100px; */
         display: flex;
         flex-direction: column;
     }
@@ -1012,6 +1078,11 @@ input[type="text"] {
     line-height: 23px;
     color: #404159;
     text-decoration: none;
+}
+
+.submenu--link:hover {
+    color: #232780;
+    transition: all ease 0.3s;
 }
 
 .submenu--sublink {
@@ -1049,7 +1120,7 @@ input[type="text"] {
 .madein {
     font-size: 14px;
     line-height: 20px;
-    color: #9293A4;
+    color: #232780;
     margin-top: 40px;
 }
 

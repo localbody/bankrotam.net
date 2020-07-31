@@ -13,6 +13,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+    input[type="email"],
     input[type="text"] {
         width: 100% !important;
     }
@@ -71,10 +72,6 @@
 }
 
 .map {
-    background-image: url(../images/map.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 483px;
     width: 100%;
 }

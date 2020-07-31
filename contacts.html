@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -72,12 +72,12 @@
 
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link" href="">
+                        <a class="social__link" href="https://api.whatsapp.com/send?phone=79774222116">
                             <img src="images/whatsapp.svg" alt="whatapp">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link" href="">
+                        <a class="social__link" href="tg://resolve?domain=bankrotamNET">
                             <img src="images/telegram.svg" alt="telegram">
                         </a>
                     </li>
@@ -131,7 +131,7 @@
                             Адрес
                         </p>
                         <p class="contact-content">
-                            119019, Улица Пушкина, 1, Стр. 1 Москва, Россия
+                            Костомаровский пер. д. 3 стр. 12 Москва, Россия
                         </p>
                     </div>
 
@@ -146,20 +146,22 @@
 
                     <div class="contact-item">
                         <p class="contact-title">
-                            ИНН
+                            Пишите в Telegram
                         </p>
-                        <p class="contact-content">
-                            40702810831280128259
-                        </p>
+                        <a class="social__link contact-content" href="tg://resolve?domain=bankrotamNET">
+                            @bankrotamNET
+                        </a>
+
                     </div>
 
                     <div class="contact-item">
                         <p class="contact-title">
-                            ОГРН
+                            Или на WhatsApp
                         </p>
-                        <p class="contact-content">
-                            1022402485709
-                        </p>
+                        <a class="social__link contact-content" href="https://api.whatsapp.com/send?phone=79774222116">
+                            +79774222116
+                        </a>
+
                     </div>
                 </div>
 
@@ -176,7 +178,7 @@
 
                         <form class="form feedback__form" action="">
 
-                            <input class="form__name bg--lightblue" type="text" placeholder="Ваше имя" />
+                            <input class="form__name bg--lightblue" type="text" pattern="[A-Za-zА-Яа-яЁё\S]" placeholder="Ваше имя" />
 
                             <div class="form__phone bg--lightblue">
                                 <div class="flag"></div>
@@ -184,12 +186,12 @@
                                 <input class="phone bg--lightblue" type="text" placeholder="+7 (999) 999-99-99">
                             </div>
 
-                            <input class="form__message bg--lightblue" type="text" placeholder="Ваше сообщение" />
+                            <input class="form__message bg--lightblue" type="email" placeholder="Ваш e-mail" />
 
                             <textarea class="form__textarea bg--lightblue" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
 
                             <label class="feedback__check-label">
-                            <input class="feedback__check-input" type="checkbox">
+                            <input class="feedback__check-input" type="checkbox" checked>
                             <svg class="feedback__check-box" viewBox="0 0 11 11">
                                 <rect class="feedback__check-border" width="11" height="11"></rect>
                                 <rect class="feedback__check-mark" x="2" y="2" width="7" height="7"></rect>
@@ -210,9 +212,10 @@
 
         </div>
 
-        <div class="map">
-
-        </div>
+        <div class="map" style="position:relative;overflow:hidden;">
+            <a href="https://yandex.by/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+            <a href="https://yandex.by/maps/213/moscow/house/kostomarovskiy_pereulok_3s12/Z04YcAFlSEcHQFtvfXt0c3xqYQ==/?ll=37.665120%2C55.752096&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Костомаровский переулок, 3с12 на карте Москвы, ближайшее метро Чкаловская — Яндекс.Карты</a>
+            <iframe src="https://yandex.by/map-widget/v1/-/CCQpaHeXgB" width="100%" height="100%" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
 
 
     </main>
