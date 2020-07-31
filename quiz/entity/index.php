@@ -135,7 +135,7 @@
                             else {
                                 $question = 1;
                             }
-                            require_once("q". $question . ".inc.php");
+                            require_once("q". $question++ . ".inc.php");
                         ?>
 
                         <div class="quiz__form-block">
