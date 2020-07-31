@@ -1,3 +1,14 @@
+
+
+
+
+
+
+
+
+
+
+
 <p class="quiz__subtitle">
     Вопрос <?=$question?>
 </p>
@@ -19,6 +30,3 @@
             <input class="form__name bg--light" type="email" name="email" id="email" placeholder="Ваш E-Mail">
         </li>
     </ul>
-
-
-
