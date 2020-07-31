@@ -77,6 +77,8 @@ if (question == questions)
 const href = document.location.href
 const anchor = href.substr(href.lastIndexOf('?') + 1, 9)
 
+console.log(href, anchor)
+
 if (anchor == "question") {
     $('html').animate({ scrollTop: $(".quiz").offset().top - 140 }, 300);
 }
