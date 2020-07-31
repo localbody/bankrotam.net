@@ -103,7 +103,7 @@
                         Подходит мне банкроство?
                     </h1>
                     <p class="intro__subtitle intro__subtitle--quiz">
-                        Онлайн для юридических лиц
+                        Онлайн для физических лиц
                     </p>
                 </div>
                 <div class="intro__btns-quiz">
