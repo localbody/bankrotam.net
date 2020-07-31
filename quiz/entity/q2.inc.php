@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 <p class="quiz__subtitle">
     Вопрос <?=$question?>
 </p>
@@ -18,7 +7,7 @@
 </h2>
 
 <p class="quiz__question">
-    Введите ваш E-Mail
+    Название компании
 </p>
 
 <form action="index.php" class="quiz__form">
@@ -27,6 +16,6 @@
 
     <ul class="quiz__answers-list">
         <li class="quiz__answers-item">
-            <input class="form__name bg--light" type="email" name="email" id="email" placeholder="Ваш E-Mail">
+            <input class="form__name bg--light" type="text" name="text" id="text" placeholder="Название вашей компании">
         </li>
-    </ul>
+    </ul>           
