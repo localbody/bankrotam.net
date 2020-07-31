@@ -1,5 +1,5 @@
 <p class="quiz__subtitle">
-q2    Вопрос <?=$question?>
+    Вопрос <?=$question?>
 </p>
 
 <h2 class="quiz__title">
