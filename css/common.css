@@ -77,6 +77,7 @@ body {
     /* padding-left: 30px;
 padding-right: 30px; */
     text-align: center;
+    cursor: pointer;
 }
 
 .btn--intro {
@@ -247,9 +248,9 @@ input[type="text"] {
 
 .btn--quiz {
     border-right: 1px solid #5A5EB8;
+    border-left: 1px solid #5A5EB8;
     border-top: 1px solid #5A5EB8;
     border-bottom: 1px solid #5A5EB8;
-    border-left: none;
 }
 
 .list-item-wrapper {
@@ -295,7 +296,8 @@ input[type="text"] {
 }
 
 .menu-line {
-    border: 1px solid #EDEDED;
+    /* border: 1px solid #EDEDED; */
+    border: none;
     grid-column-start: 1;
     grid-column-end: 3;
 }

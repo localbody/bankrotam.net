@@ -170,7 +170,7 @@
 }
 
 @media (min-width: 1440px) {
-    .quiz__form-btn {
+    .quiz__form-btn-next {
         width: 313px;
         margin: 0 56px 0 0;
     }
@@ -178,6 +178,7 @@
 
 .btn--quiz {
     margin-bottom: 30px;
+    font-size: 21px;
 }
 
 .back {
