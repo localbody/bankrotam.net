@@ -107,8 +107,8 @@
                     </p>
                 </div>
                 <div class="intro__btns-quiz">
-                    <a class="btn btn--intro btn--quiz bg--transparent" href="../../quiz/individual/index.html">Для физ. лиц</a>
-                    <a class="btn btn--intro btn--quiz bg--yellow" href="../../quiz/entity/index.html">Для юр. лиц</a>
+                    <a class="btn btn--intro btn--quiz bg--transparent" href="../../quiz/individual/">Для физ. лиц</a>
+                    <a class="btn btn--intro btn--quiz bg--yellow" href="../../quiz/entity/">Для юр. лиц</a>
                 </div>
             </div>
 
