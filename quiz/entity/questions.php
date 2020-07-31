@@ -202,13 +202,9 @@
                   </p>
                 
                   <h2 class="quiz__title">
-                    Анкета банкрота — вопросы для процедуры банкротства
-                  </h2>
-                
-                  <p class="quiz__question">
                     '. $value->question .'
-                  </p>
-                  
+                  </h2>
+                                  
                   <form action="index.php" class="quiz__form">
                     <input type="hidden" name="question" id="question" value="'.($numberQuestion + 1). '">
                     <input type="hidden" name="questions" id="questions" value="34">
