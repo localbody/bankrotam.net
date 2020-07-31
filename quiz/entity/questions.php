@@ -185,7 +185,7 @@
 
     $arrQuestions = json_decode($questons)->questions;
 
-    var_dump($arrQuestions);
+    // var_dump($arrQuestions);
 
     foreach ($arrQuestions as $key => $value) {
         // var_dump($key);
