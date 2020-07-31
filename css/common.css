@@ -18,6 +18,10 @@ html {
     outline: none;
 }
 
+.noscroll {
+    overflow: hidden;
+}
+
 hr {
     border: none;
     margin: 0;
@@ -536,7 +540,7 @@ input[type="text"] {
 
 .header__phone {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 28px;
     line-height: 23px;
     color: #404159;
     text-decoration: none;
@@ -550,10 +554,11 @@ input[type="text"] {
 }
 
 .header__mail {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 16px;
     color: #E5C67A;
     display: block;
+    margin-top: 26px;
     margin-bottom: 36px;
     text-decoration: none;
 }

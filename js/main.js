@@ -1,6 +1,7 @@
 $(".header__menu-btn").click(() => {
     $(".header__menu-btn").toggleClass("header__menu-btn--close")
     $(".header__menu").toggleClass("nav--show")
+    $("body").toggleClass("noscroll")
 })
 
 $(".faq-title").click(function (event) {
@@ -17,9 +18,8 @@ if (popups__feedback.length > 0) {
         const element = popups__feedback[index];
 
         $(element).click(function (e) {
-            console.log(1)
-
             $(".popup__feedback").addClass("open")
+            $("body").toggleClass("noscroll")
             e.preventDefault()
         })
     }
@@ -33,7 +33,6 @@ if (popups__thanks.length > 0) {
         $(element).click(function (e) {
             // закроем другие попапы
             $(".popup").removeClass("open")
-
             $(".popup__thanks").addClass("open")
             e.preventDefault()
         })
@@ -42,6 +41,7 @@ if (popups__thanks.length > 0) {
 
 $(".popup__close").click(function (e) {
     $(".popup").removeClass("open")
+    $("body").toggleClass("noscroll")
     e.preventDefault()
 })
 
