@@ -28,7 +28,7 @@
     }
     ';
 
-    $numberQuestion = isset($_GET['n']) ? $_GET['n'] : 3;
+    $numberQuestion = isset($_GET['question']) ? $_GET['questions'] : 1;
 
     $arrQuestions = json_decode($questons)->questions;
 
