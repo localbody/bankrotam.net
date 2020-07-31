@@ -133,7 +133,7 @@
 
                         <div class="quiz__form-block">
                             <button class="btn bg--blue quiz__form-btn-next">Перейти к следующему вопросу</button>
-                            <a class="back" href="../../quiz/entity/">Вернуться на главную</a>
+                            <a class="back" href="../../quiz/individual/">Вернуться на главную</a>
                         </div>
 
                     </form>
