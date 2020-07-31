@@ -10,7 +10,7 @@
     Имеется ли доступ к действующему директору юрлица?
 </p>
 
-<form action="index.php#quiz" class="quiz__form">
+<form action="index.php" class="quiz__form">
     <input type="hidden" name="question" id="question" value="<?=$nextQuestion?>">
     <input type="hidden" name="questions" id="questions" value="34">
     <ul class="quiz__answers-list">
