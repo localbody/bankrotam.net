@@ -23,7 +23,9 @@ $(".form__btn").click(
           function onAjaxSuccess(data)
           {
             // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-            console.log(data)
+            // console.log(data)
+            $("body").toggleClass("noscroll")
+            $(".popup__thanks").addClass("open")
           }
 
     }
