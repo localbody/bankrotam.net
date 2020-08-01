@@ -4,9 +4,12 @@
 
     $name   = "Имя: "; 
     $name   .= isset($_POST["name"]) ? $_POST["name"] : "Без имени";
-    $phone  = "Телефон: " . isset($_POST["phone"]) ? $_POST["phone"] : "Без телефона";
-    $summa  = "Сумма долга: " . isset($_POST["summa"]) ? $_POST["summa"] : "Сумма не указана";
-    $text   = "Сообщение: " . isset($_POST["text"]) ? $_POST["text"] : "Без текста";
+    $phone  = "Телефон: ";
+    $phone  .= isset($_POST["phone"]) ? $_POST["phone"] : "Без телефона";
+    $summa  = "Сумма долга: ";
+    $summa  .= "Сумма долга: " . isset($_POST["summa"]) ? $_POST["summa"] : "Сумма не указана";
+    $text   = "Сообщение: ";
+    $text   .= isset($_POST["text"]) ? $_POST["text"] : "Без текста";
     
     // Сообщение
     $message = "$name\r\n$phone\r\n$summa\r\n$text";
