@@ -201,7 +201,7 @@
                         <a class="submenu--link" href="../../faq/">FAQ</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="../../ozyvy/">Отзывы</a>
+                        <a class="submenu--link" href="../../otzyvy/">Отзывы</a>
                     </li>
                     <li class="submenu--item">
                         <a class="submenu--link" href="../../kontakty/">Контакты</a>
