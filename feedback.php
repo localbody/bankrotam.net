@@ -1,7 +1,5 @@
 <?php
-
-    var_dump($_SERVER);
-
+    
     $subject = "Обратная связь с BANKROTAM.NET";
 
     $name   = "Имя: " . isset($_GET["name"]) ? $_GET["name"] : "Без имени";
