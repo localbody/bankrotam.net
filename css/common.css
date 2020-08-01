@@ -304,8 +304,8 @@ input[type="text"] {
 }
 
 .menu-line {
-    border: 1px solid #EDEDED;
-    border: none;
+    border-top: 1px solid #EDEDED;
+    /* border: none; */
     grid-column-start: 1;
     grid-column-end: 3;
 }
