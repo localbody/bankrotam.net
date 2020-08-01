@@ -3,12 +3,19 @@ $(".form__btn").click(
 
         e.preventDefault()
         // console.log( $(this).parent().find(".form__name").val() )
-        name = $(this).parent().find(".form__name").val()
+        const name = $(this).parent().find(".form__name").val()
+        const phone = $(this).parent().find(".phone").val()
+        const summa = $(this).parent().find(".summa").val()
+        const text = $(this).parent().find(".form__textarea").val()
+        
 
         $.post(
             "../feedback.php",
             {
-                name
+                name,
+                phone,
+                summa,
+                text
             },
             onAjaxSuccess
           );
@@ -16,7 +23,7 @@ $(".form__btn").click(
           function onAjaxSuccess(data)
           {
             // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-            alert(data);
+            console.log(data)
           }
 
     }

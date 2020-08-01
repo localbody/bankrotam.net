@@ -15,5 +15,5 @@
     // Отправляем
     mail("localbody@gmail.com", $subject, $message);
 
-    echo $name;
+    echo $name . " - " . $phone . " - " . $summa . " - " . $text . " - " . $subject ;
 ?>
