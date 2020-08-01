@@ -66,6 +66,7 @@ if (popups__thanks.length > 0) {
             // закроем другие попапы
             $(".popup").removeClass("open")
             $(".popup__thanks").addClass("open")
+            $("body").addClass("noscroll")
             e.preventDefault()
         })
     }
