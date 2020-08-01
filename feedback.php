@@ -2,7 +2,8 @@
 
     $subject = "Обратная связь с BANKROTAM.NET";
 
-    $name   = "Имя: " . (isset($_POST["name"]) ? $_POST["name"] : "Без имени");
+    $name   = isset($_POST["name"]) ? $_POST["name"] : "Без имени";
+    $name .= "Имя: "; 
     $phone  = "Телефон: " . isset($_POST["phone"]) ? $_POST["phone"] : "Без телефона";
     $summa  = "Сумма долга: " . isset($_POST["summa"]) ? $_POST["summa"] : "Сумма не указана";
     $text   = "Сообщение: " . isset($_POST["text"]) ? $_POST["text"] : "Без текста";
