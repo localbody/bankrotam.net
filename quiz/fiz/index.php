@@ -17,7 +17,7 @@
         <div class="header__container">
 
             <div class="logo">
-                <a class="logo__link" href="index.html">
+                <a class="logo__link" href="../../">
                     Bankrotam.net
                 </a>
                 <p class="logo__subtitle">
@@ -30,49 +30,49 @@
             <nav class="header__menu">
                 <ul class="menu__items">
                     <li class="menu__item main--link">
-                        <a class="menu__link" href="../../index.html">Главная</a>
+                        <a class="menu__link" href="../../">Главная</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="../../individual.html">Физическим лицам</a>
+                        <a class="menu__link" href="../../fiz/">Физическим лицам</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="../../entity.html">Юридических лицам</a>
+                        <a class="menu__link" href="../../ur/">Юридических лицам</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="../../faq.html">Вопрос-ответ</a>
+                        <a class="menu__link" href="../../faq/">Вопрос-ответ</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="../../reviews.html">Отзывы клиентов</a>
+                        <a class="menu__link" href="../../otzyvy/">Отзывы клиентов</a>
                     </li>
                     <li class="menu__item">
-                        <a class="menu__link" href="../../contacts.html">Контакты</a>
+                        <a class="menu__link" href="../../kontakty/">Контакты</a>
                     </li>
                 </ul>
 
                 <a class="header__phone" href="tel:+74951288974">+7 495 128 89 74</a>
 
-                <a class="header__mail" href="">info@bankrotam.net</a>
+                <a class="header__mail" href="mailto:info@bankrotam.net">info@bankrotam.net</a>
 
-                <a class="btn bg--blue btn__header" href="">Подать заявку</a>
+                <a class="btn bg--blue btn__header" href="">Оставить заявку</a>
             </nav>
             <div class="header__social">
 
                 <div class="header__social-wrapper">
                     <a class="header__social-phone" href="tel:+74951288974">+7 495 128 89 74</a>
 
-                    <a class="header__social-mail" href="">info@bankrotam.net</a>
+                    <a class="header__social-mail" href="mailto:info@bankrotam.net">info@bankrotam.net</a>
                 </div>
 
-                <a class="btn bg--blue header__social-btn" href="">Подать заявку</a>
+                <a class="btn bg--blue header__social-btn" href="">Оставить заявку</a>
 
                 <ul class="social__list">
                     <li class="social__item">
-                        <a class="social__link" href="">
+                        <a class="social__link" href="https://api.whatsapp.com/send?phone=79774222116">
                             <img src="../../images/whatsapp.svg" alt="whatapp">
                         </a>
                     </li>
                     <li class="social__item">
-                        <a class="social__link" href="">
+                        <a class="social__link" href="tg://resolve?domain=bankrotamNET">
                             <img src="../../images/telegram.svg" alt="telegram">
                         </a>
                     </li>
@@ -103,12 +103,12 @@
                         Подходит мне банкроство?
                     </h1>
                     <p class="intro__subtitle intro__subtitle--quiz">
-                        Онлайн для юридических лиц
+                        Онлайн для физических лиц
                     </p>
                 </div>
                 <div class="intro__btns-quiz">
-                    <a class="btn btn--intro btn--quiz bg--transparent" href="../../quiz/individual/">Для физ. лиц</a>
-                    <a class="btn btn--intro btn--quiz bg--yellow" href="../../quiz/entity/">Для юр. лиц</a>
+                    <p class="btn btn--intro btn--quiz bg--yellow">Для физ. лиц</p>
+                    <a class="btn btn--intro btn--quiz bg--transparent" href="../ur/">Для юр. лиц</a>
                 </div>
             </div>
 
@@ -133,7 +133,7 @@
 
                         <div class="quiz__form-block">
                             <button class="btn bg--blue quiz__form-btn-next">Перейти к следующему вопросу</button>
-                            <a class="back" href="../../quiz/entity/">Вернуться на главную</a>
+                            <a class="back" href="/">Вернуться на главную</a>
                         </div>
 
                     </form>
@@ -149,48 +149,48 @@
 
         <div class="footer__wrapper">
             <div class="footer__header">
-                <a class="footer__logo-link" href="../../index.html">
+                <a class="footer__logo-link" href="../../">
                     Банкротство в Москве</a>
                 <div class="footer__title">
                     Банкротство лиц. Ликвидация организаций. Арбитражный управляющий
                 </div>
 
-                <a class="btn bg--blue footer__btn" href="">Освободиться от долгов</a>
+                <a class="btn bg--blue footer__btn" href="/">Оставить заявку</a>
             </div>
 
             <div class="submenu">
                 <ul>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="../../individual.html">Физическим лицам</a>
+                        <a class="submenu--link" href="../../fiz/">Физическим лицам</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../individual_zakon.html">Закон о банкротстве</a>
+                        <a class="submenu--sublink" href="../../fiz/zakon/">Закон о банкротстве</a>
                     </li>
                     <li class=" submenu--item">
-                        <a class="submenu--sublink" href="../../individual_procedure.html">Процедура банкротства</a>
+                        <a class="submenu--sublink" href="../../fiz/procedura/">Процедура банкротства</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../individual_after.html">Последствия банкротства</a>
+                        <a class="submenu--sublink" href="../../fiz/posledstvia/">Последствия банкротства</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../individual_price.html">Цена банкротства</a>
+                        <a class="submenu--sublink" href="../../fiz/cena/">Цена банкротства</a>
                     </li>
                 </ul>
                 <ul>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="../../entity.html">Юридическим лицам</a>
+                        <a class="submenu--link" href="../../ur/">Юридическим лицам</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../entity_zakon.html">Закон о банкротстве</a>
+                        <a class="submenu--sublink" href="../../ur/zakon/">Закон о банкротстве</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../entity_procedure.html">Процедура банкротства</a>
+                        <a class="submenu--sublink" href="../../ur/procedura/">Процедура банкротства</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../entity_after.html">Последствия банкротства</a>
+                        <a class="submenu--sublink" href="../../ur/posledstviya/">Последствия банкротства</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../entity_price.html">Цена банкротства</a>
+                        <a class="submenu--sublink" href="../../ur/cena/">Цена банкротства</a>
                     </li>
                 </ul>
             </div>
@@ -198,13 +198,13 @@
             <div class="submenu--mini">
                 <ul class="submenu__items">
                     <li class="submenu--item">
-                        <a class="submenu--link" href="../../faq.html">FAQ</a>
+                        <a class="submenu--link" href="../../faq/">FAQ</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="../../reviews.html">Отзывы</a>
+                        <a class="submenu--link" href="../../otzyvy/">Отзывы</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--link" href="../../contacts.html">Контакты</a>
+                        <a class="submenu--link" href="../../kontakty/">Контакты</a>
                     </li>
                 </ul>
             </div>
@@ -214,9 +214,9 @@
             <div class="copy">
                 2020 Москва. Банкротство юридических и физических лиц
             </div>
-            <div class="madein">
-                Разработано в студии Dublin Group
-            </div>
+            <a class="madein" href="https://dublingroup.ru">
+                Разработано в студии <span class="dublin-group">Dublin Group</span>
+            </a>
         </div>
 
     </footer>

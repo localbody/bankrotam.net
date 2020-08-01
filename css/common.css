@@ -760,7 +760,7 @@ input[type="text"] {
 }
 
 .intro__title-link {
-    text-decoration: underline;
+    text-decoration: none;
     color: white;
 }
 
@@ -1095,7 +1095,6 @@ input[type="text"] {
 .madein {
     font-size: 14px;
     line-height: 20px;
-    color: #232780;
     margin-top: 40px;
 }
 
@@ -1105,6 +1104,9 @@ input[type="text"] {
     }
 }
 
+.dublin-group {
+    color: #232780;
+}
 
 /* footer */
 
