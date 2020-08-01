@@ -1,10 +1,9 @@
 $(".form__btn").click(
-    (e) => {
+    function(e) {
 
         e.preventDefault()
-        name = $(this).prev(".form__name").val()
-
-        console.log(name)
+        // console.log( $(this).parent().find(".form__name").val() )
+        name = $(this).parent().find(".form__name").val()
 
         $.post(
             "../feedback.php",
@@ -19,6 +18,7 @@ $(".form__btn").click(
             // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
             alert(data);
           }
+
     }
 )
 
