@@ -179,19 +179,19 @@
                             Задайте их и запишитесь на бесплатную консультацию!
                         </p>
 
-                        <form class="form feedback__form" action="">
+                        <form class="form feedback__form" action="../feedback.php">
 
                             <input class="form__name bg--lightblue" type="text" pattern="[A-Za-zА-Яа-яЁё\S]" placeholder="Ваше имя" />
 
                             <div class="form__phone bg--lightblue">
                                 <div class="flag"></div>
                                 <!-- <!-- <div class="prefix">+7</div> --> -->
-                                <input class="phone bg--lightblue" type="text" placeholder="+7 (999) 999-99-99">
+                                <input class="phone bg--lightblue" type="text" name="phone" placeholder="+7 (999) 999-99-99">
                             </div>
 
-                            <input class="form__message bg--lightblue" type="email" placeholder="Ваш e-mail" />
+                            <input class="form__message bg--lightblue" type="email" name="email" placeholder="Ваш e-mail" />
 
-                            <textarea class="form__textarea bg--lightblue" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+                            <textarea class="form__textarea bg--lightblue" cols="30" rows="10" name="text" placeholder="Ваше сообщение"></textarea>
 
                             <label class="feedback__check-label">
                             <input class="feedback__check-input" type="checkbox" checked>

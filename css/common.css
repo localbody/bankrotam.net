@@ -958,7 +958,7 @@ input[type="text"] {
 @media (min-width: 1440px) {
     .footer__wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: start;
     }
 }
 
@@ -1012,7 +1012,7 @@ input[type="text"] {
     .submenu {
         width: 700px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 0;
     }
 }
@@ -1093,6 +1093,8 @@ input[type="text"] {
 }
 
 .madein {
+    text-decoration: none;
+    color: #9293A4;
     font-size: 14px;
     line-height: 20px;
     margin-top: 40px;
