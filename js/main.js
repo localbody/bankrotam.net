@@ -1,3 +1,27 @@
+$(".form__btn").click(
+    (e) => {
+
+        e.preventDefault()
+        name = $(this).prev(".form__name").val()
+
+        console.log(name)
+
+        $.post(
+            "../feedback.php",
+            {
+                name
+            },
+            onAjaxSuccess
+          );
+           
+          function onAjaxSuccess(data)
+          {
+            // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
+            alert(data);
+          }
+    }
+)
+
 $(".header__menu-btn").click(() => {
     $(".header__menu-btn").toggleClass("header__menu-btn--close")
     $(".header__menu").toggleClass("nav--show")

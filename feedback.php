@@ -1,5 +1,5 @@
 <?php
-    
+
     $subject = "Обратная связь с BANKROTAM.NET";
 
     $name   = "Имя: " . isset($_GET["name"]) ? $_GET["name"] : "Без имени";
@@ -14,4 +14,6 @@
 
     // Отправляем
     mail("localbody@gmail.com", $subject, $message);
+
+    echo $name;
 ?>
