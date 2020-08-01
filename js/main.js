@@ -25,6 +25,7 @@ $(".form__btn").click(
             // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
             // console.log(data)
             $(".popup__thanks").addClass("open")
+            $("body").addClass("noscroll")
           }
 
     }
