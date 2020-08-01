@@ -52,7 +52,7 @@ if (popups__feedback.length > 0) {
 
         $(element).click(function (e) {
             $(".popup__feedback").addClass("open")
-            $("body").toggleClass("noscroll")
+            $("body").addClass("noscroll")
             e.preventDefault()
         })
     }
@@ -62,7 +62,6 @@ const popups__thanks = $(".popup__thanks-link")
 if (popups__thanks.length > 0) {
     for (let index = 0; index < popups__thanks.length; index++) {
         const element = popups__thanks[index];
-
         $(element).click(function (e) {
             // закроем другие попапы
             $(".popup").removeClass("open")
@@ -74,7 +73,7 @@ if (popups__thanks.length > 0) {
 
 $(".popup__close").click(function (e) {
     $(".popup").removeClass("open")
-    $("body").toggleClass("noscroll")
+    $("body").removeClass("noscroll")
     e.preventDefault()
 })
 
