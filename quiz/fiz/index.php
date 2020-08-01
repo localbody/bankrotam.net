@@ -170,7 +170,7 @@
                         <a class="submenu--sublink" href="../../fiz/procedura/">Процедура банкротства</a>
                     </li>
                     <li class="submenu--item">
-                        <a class="submenu--sublink" href="../../fiz/posledstviya">Последствия банкротства</a>
+                        <a class="submenu--sublink" href="../../fiz/posledstviya/">Последствия банкротства</a>
                     </li>
                     <li class="submenu--item">
                         <a class="submenu--sublink" href="../../fiz/cena/">Цена банкротства</a>
