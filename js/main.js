@@ -4,9 +4,6 @@ var isLastQuestion = false
 var arrQuestions = []
 var arrAnswers = []
 
-console.log(arrQuestions, arrAnswers)
-
-
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
 
@@ -113,7 +110,7 @@ $(".form__btn").click(
               }    
         }
 
-        return false
+        return true
 
     }
 )
@@ -231,12 +228,30 @@ $(".quiz__form-btn-next").click(function (e) {
 
         for (let index = 1; index <= questions; index++) {
             
-            allQuestionsAnswers += localStorage.getItem("q"+index.toString()) + "\r\n"
-            allQuestionsAnswers += localStorage.getItem("a"+index.toString()) + "\r\n"
-            allQuestionsAnswers += "\r\n"
+            allQuestionsAnswers += localStorage.getItem("q"+index.toString()) + "\n"
+            allQuestionsAnswers += localStorage.getItem("a"+index.toString()) + "\n"
+            allQuestionsAnswers += "\n"
 
         }
 
+        message = allQuestionsAnswers
+
+        $.post(
+            "../sendquiz.php",
+            {
+                message
+            },
+            onAjaxSuccess
+          );
+           
+          function onAjaxSuccess(data)
+          {
+            // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
+            // console.log(data)
+            $(".popup__thanks").addClass("open")
+            $("body").addClass("noscroll")
+          }    
+                
         console.log(allQuestionsAnswers)
 
         e.preventDefault()
