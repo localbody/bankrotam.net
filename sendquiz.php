@@ -2,7 +2,7 @@
 
     $subject = "Тест с BANKROTAM.NET";
 
-    $message   = isset($_GET["message"]) ? $_GET["message"] : "Пусто...";
+    $message   = isset($_POST["message"]) ? $_POST["message"] : "Пусто...";
     
     // Сообщение
     // На случай если какая-то строка письма длиннее 70 символов мы используем wordwrap()
