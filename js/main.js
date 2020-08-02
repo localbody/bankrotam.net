@@ -240,11 +240,8 @@ $(".quiz__form-btn-next").click(function (e) {
         console.log(allQuestionsAnswers)
 
         e.preventDefault()
-    }
 
     }
-
-    
 
 })
 
