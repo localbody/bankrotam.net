@@ -17,7 +17,7 @@
     // $message = wordwrap($message, 70, "\r\n");
 
     // Отправляем
-    // mail("noreply@bankrotam.net", $subject, $message);
-    mail("info@bankrotam.net", $subject, $message);
-    mail("localbody@yandex.ru", $subject, $message);
+    mail("localbody@gmail.com", $subject, $message, "Content-type:text/plain; charset = UTF-8\r\nFrom:feedback@bankrotam.net");
+    mail("localbody@mail.ru", $subject, $message, "Content-type:text/plain; charset = UTF-8\r\nFrom:feedback@bankrotam.net");
+    mail("localbody@yandex.ru", $subject, $message, "Content-type:text/plain; charset = UTF-8\r\nFrom:feedback@bankrotam.net");
 ?>
