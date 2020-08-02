@@ -943,6 +943,7 @@ input[type="text"] {
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
+    display: none;
 }
 
 @media (min-width: 1440px) {
@@ -970,6 +971,7 @@ input[type="text"] {
 }
 
 .footer__logo-link {
+    display: block;
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-size: 43px 40px;
