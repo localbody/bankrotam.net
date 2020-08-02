@@ -1,4 +1,5 @@
 var formValid = false
+var isFirstQuestion = false
 var isLastQuestion = false
 var arrQuestions = []
 var arrAnswers = []
@@ -190,6 +191,15 @@ $(".stages__items").on("mousewheel", function (event) {
 const question = $("#question").val() - 1
 const questions = $("#questions").val()
 const ready = Math.round((99 / questions) * question)
+
+if (question == 1) {
+    // чистим LocalStorage
+    for (let index = 1; index < questions; index++) {
+        localStorage.setItem("q" + index.toString(), "")
+        localStorage.setItem("a" + index.toString(), "")
+    }
+    
+}
 
 $(".quiz__progressbar-count").html("Вопрос " + question + " из " + questions)
 $(".quiz__progressbar-percent").html(ready + "%")
