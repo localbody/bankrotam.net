@@ -5,6 +5,7 @@
 @import "../css/icons.css";
 @import "../css/colors.css";
 
+
 /*  */
 
 html {
@@ -331,6 +332,7 @@ input[type="text"] {
 
 .main {
     padding-top: 117px;
+    overflow-x: hidden;
 }
 
 .header {
@@ -938,12 +940,12 @@ input[type="text"] {
 /* footer */
 
 .footer {
+    display: none;
     padding-top: 60px;
     padding-bottom: 30px;
     padding-left: 40px;
     padding-right: 40px;
     text-align: center;
-    display: none;
 }
 
 @media (min-width: 1440px) {
@@ -1243,6 +1245,7 @@ input[type="text"] {
 /* stages */
 
 .stages {
+    display: none;
     padding-top: 93px;
     padding-bottom: 60px;
     padding-left: 25px;
@@ -1266,15 +1269,16 @@ input[type="text"] {
 }
 
 .stages__items {
+    /* pointer-events: none; */
+    /* overflow-x: scroll; */
     display: flex;
-    overflow-x: scroll;
     margin-right: -25px;
     margin-bottom: 50px;
     padding-bottom: 25px;
 }
 
 .stages__items::-webkit-scrollbar {
-    width: 0px;
+    /* width: 0px; */
 }
 
 @media (min-width:1920px) {
@@ -1346,3 +1350,4 @@ input[type="text"] {
 
 
 /* stages */
+

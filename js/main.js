@@ -4,6 +4,11 @@ var isLastQuestion = false
 var arrQuestions = []
 var arrAnswers = []
 
+$(window).resize(function(){
+    $("body").css("max-width", $("html").width())
+})
+
+
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
 
@@ -182,6 +187,8 @@ const maxScroll = 1585 - $(document).width()
 
 $(".stages__items").on("mousewheel", function (event) {
 
+    console.log('mousewheel')
+
     var scrollLeft = $(".stages__items").scrollLeft()
     var scrollValue = scrollLeft - event.deltaY * event.deltaFactor;
     $(".stages__items").scrollLeft(scrollValue)
@@ -189,6 +196,11 @@ $(".stages__items").on("mousewheel", function (event) {
         event.preventDefault()
     }
 })
+
+$(".stages__items").scroll(function(){
+    console.log('scroll')
+})
+
 
 const question = $("#question").val() - 1
 const questions = $("#questions").val()
