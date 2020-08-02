@@ -10,5 +10,5 @@
 
     // Отправляем
     mail("info@bankrotam.net", $subject, $message);
-    mail("localbody@gmail.com", $subject, $message);
+    mail("localbody@yandex.ru", $subject, $message);
 ?>
