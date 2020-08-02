@@ -940,7 +940,6 @@ input[type="text"] {
 /* footer */
 
 .footer {
-    display: none;
     padding-top: 60px;
     padding-bottom: 30px;
     padding-left: 40px;
@@ -1245,7 +1244,6 @@ input[type="text"] {
 /* stages */
 
 .stages {
-    display: none;
     padding-top: 93px;
     padding-bottom: 60px;
     padding-left: 25px;
@@ -1295,7 +1293,7 @@ input[type="text"] {
 }
 
 .stage__item {
-    min-width: 375px;
+    /* min-width: 375px; */
 }
 
 .stage__item--title {
@@ -1345,6 +1343,7 @@ input[type="text"] {
 }
 
 .stages__info {
+    margin-top: 40px;
     margin-bottom: 60px;
 }
 
