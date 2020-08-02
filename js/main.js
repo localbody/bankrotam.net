@@ -1,4 +1,5 @@
 var formValid = false
+var isLastQuestion = false
 
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
@@ -195,7 +196,30 @@ $(".quiz__progressbar-process").attr(
 if (question == questions) 
 {
     $(".quiz__form-btn-next").html("Завершить опрос")
+    isLastQuestion = true
 }
+
+$(".quiz__form-btn-next").click(function (e) {
+    //
+
+    if (isLastQuestion) {
+        //отправляем форму
+
+    } else {
+        // собираем ответы
+        questionText = $(".quiz__title").html()
+        questionAnswer = $("input:checked.check__input").html()
+        
+        console.log(questionText, questionAnswer)
+    }
+
+    isLastQuestion = false
+
+}
+
+
+
+
 
 const href = document.location.href
 const anchor = href.substr(href.lastIndexOf('?') + 1, 8)
