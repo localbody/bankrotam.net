@@ -194,7 +194,7 @@ const ready = Math.round((99 / questions) * question)
 
 if (question == 1) {
     // чистим LocalStorage
-    for (let index = 1; index < questions; index++) {
+    for (let index = 1; index <= questions; index++) {
         localStorage.setItem("q" + index.toString(), "")
         localStorage.setItem("a" + index.toString(), "")
     }
@@ -219,7 +219,7 @@ $(".quiz__form-btn-next").click(function (e) {
 
     if (isLastQuestion) {
         //отправляем форму
-
+        console.log('ready')
     } else {
         // собираем ответы
         let questionText = $(".quiz__title").html()
