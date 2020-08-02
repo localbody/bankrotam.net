@@ -171,6 +171,11 @@ $(".popup__close").click(function (e) {
         formValid = true
     }
     e.preventDefault()
+
+    // если тест пройден
+    if (isLastQuestion) {
+        window.location.replace("https://bankrotam.net/");
+    }
 })
 
 const maxScroll = 1585 - $(document).width()
@@ -253,7 +258,6 @@ $(".quiz__form-btn-next").click(function (e) {
           }    
                 
         e.preventDefault()
-        window.location.replace("https://bankrotam.net/");
     }
 
 })
