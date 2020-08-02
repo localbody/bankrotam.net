@@ -229,11 +229,11 @@ $(".quiz__form-btn-next").click(function (e) {
 
         let allQuestionsAnswers = "";
 
-        for (let index = 0; index <= questions; index++) {
+        for (let index = 1; index <= questions; index++) {
             
-            allQuestionsAnswers = localStorage.getItem("q"+index.toString()) + "\r\n"
-            allQuestionsAnswers = localStorage.getItem("a"+index.toString()) + "\r\n"
-            allQuestionsAnswers = "\r\n"
+            allQuestionsAnswers += localStorage.getItem("q"+index.toString()) + "\r\n"
+            allQuestionsAnswers += localStorage.getItem("a"+index.toString()) + "\r\n"
+            allQuestionsAnswers += "\r\n"
 
         }
 
