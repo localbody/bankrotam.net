@@ -228,9 +228,9 @@ $(".quiz__form-btn-next").click(function (e) {
 
         for (let index = 1; index <= questions; index++) {
             
-            allQuestionsAnswers += localStorage.getItem("q"+index.toString()) + "\n"
-            allQuestionsAnswers += localStorage.getItem("a"+index.toString()) + "\n"
-            allQuestionsAnswers += "\n"
+            allQuestionsAnswers += localStorage.getItem("q"+index.toString()).trim() + "\n"
+            allQuestionsAnswers += localStorage.getItem("a"+index.toString()).trim() + "\n"
+            allQuestionsAnswers += "----------------------------------------------------\n"
 
         }
 
