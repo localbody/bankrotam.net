@@ -1,32 +1,112 @@
+var formValid = false
+
+function showError( title , subtitle  ) {
+    const popup__error = $(".popup__error")
+
+    // console.log(popup__error)
+
+    popup__error.find(".popup__title").html(title)
+    popup__error.find(".popup__subtitle").html(subtitle)
+    popup__error.addClass("open")
+}
+
+function isValidMail(email) {
+    const re = /^[\w-\.]+@[\w-]+\.[a-z]{2,4}$/i
+    const valid = re.test(email)
+    return valid
+}
+
+function idValidPhone(phone) {
+    var re = /^\+[7]\d[\d\(\)\ -]{4,14}\d$/
+    var valid = re.test(phone)
+    return valid
+}  
+
+function idValidName(name) {
+    var re = /^[А-Яа-яЁё\s]+$/
+    var valid = re.test(name)
+    return valid
+}  
+
+function idValidSumma(summa) {
+    var re = /[0-9]{5,15}/
+    var valid = re.test(summa)
+    return valid
+}  
+
+
 $(".form__btn").click(
     function(e) {
 
         e.preventDefault()
         // console.log( $(this).parent().find(".form__name").val() )
-        const name = $(this).parent().find(".form__name").val()
+        const email = $(this).parent().find(".form__email").val()
+        const name  = $(this).parent().find(".form__name").val()
         const phone = $(this).parent().find(".phone").val()
         const summa = $(this).parent().find(".summa").val()
-        const text = $(this).parent().find(".form__textarea").val()
+        const text  = $(this).parent().find(".form__textarea").val()
         
+        let errorMessage = ""
 
-        $.post(
-            "../feedback.php",
-            {
-                name,
-                phone,
-                summa,
-                text
-            },
-            onAjaxSuccess
-          );
-           
-          function onAjaxSuccess(data)
-          {
-            // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-            // console.log(data)
-            $(".popup__thanks").addClass("open")
-            $("body").addClass("noscroll")
-          }
+        if (typeof email != "undefined") {
+            // проверим email
+            if ( !isValidMail(email) ) {
+                errorMessage = errorMessage + "- поле E-mail<br>"
+            }
+        } 
+        if(typeof name != "undefined") {
+            // проверим имя
+            if ( !idValidName(name) ) {
+                errorMessage = errorMessage + "- поле Имя<br>"
+            }
+        } 
+        if(typeof phone != "undefined") {
+            // проверим тел
+            if ( !idValidPhone(phone) ) {
+                errorMessage = errorMessage + "- поле Телефон<br/>"
+            }
+        } 
+        if(typeof summa != "undefined") {
+            // проверим сумму
+            if ( !idValidSumma(summa) ) {
+                errorMessage = errorMessage + "- поле Сумма<br/>"
+            }
+        } 
+
+        if ( errorMessage != "" ) {
+            
+            formValid = false
+
+            errorMessage = "Проверьте:</br>" + errorMessage
+
+            // console.log(errorMessage)
+
+            showError("Ошибка", errorMessage)
+        } else {
+
+            formValid = true 
+
+            $.post(
+                "../feedback.php",
+                {
+                    name,
+                    phone,
+                    summa,
+                    text
+                },
+                onAjaxSuccess
+              );
+               
+              function onAjaxSuccess(data)
+              {
+                // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
+                // console.log(data)
+                $(".popup__thanks").addClass("open")
+                $("body").addClass("noscroll")
+              }    
+        }
+
+        return false
 
     }
 )
@@ -63,25 +143,35 @@ if (popups__thanks.length > 0) {
     for (let index = 0; index < popups__thanks.length; index++) {
         const element = popups__thanks[index];
         $(element).click(function (e) {
+            
+            //
             // закроем другие попапы
-            $(".popup").removeClass("open")
-            $(".popup__thanks").addClass("open")
-            $("body").addClass("noscroll")
+            if (formValid) {
+                $(".popup").removeClass("open")
+                $(".popup__thanks").addClass("open")
+                $("body").addClass("noscroll")
+            }
+
             e.preventDefault()
         })
     }
 }
 
 $(".popup__close").click(function (e) {
-    $(".popup").removeClass("open")
-    $("body").removeClass("noscroll")
+
+    if (formValid) {
+        $(".popup").removeClass("open")
+        $("body").removeClass("noscroll")
+    } else {
+        $(".popup__error").removeClass("open")
+        formValid = true
+    }
     e.preventDefault()
 })
 
 const maxScroll = 1585 - $(document).width()
 
 $(".stages__items").on("mousewheel", function (event) {
-    console.log(1)
 
     var scrollLeft = $(".stages__items").scrollLeft()
     var scrollValue = scrollLeft - event.deltaY * event.deltaFactor;
