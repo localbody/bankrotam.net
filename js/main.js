@@ -213,7 +213,7 @@ $(".quiz__form-btn-next").click(function (e) {
     } else {
         // собираем ответы
         let questionText = $(".quiz__title").html()
-        let questionAnswer = $(".check__input:checked").html()
+        let questionAnswer = $("input:checked.check__input").parent().find(".quiz__answers-text").html()
         
         localStorage.setItem('q'+question.toString(), questionText)
         localStorage.setItem('a'+question.toString(), questionAnswer)
