@@ -17,6 +17,7 @@
     // $message = wordwrap($message, 70, "\r\n");
 
     // Отправляем
-    mail("noreply@bankrotam.net", $subject, $message);
+    // mail("noreply@bankrotam.net", $subject, $message);
+    mail("info@bankrotam.net", $subject, $message);
     mail("localbody@gmail.com", $subject, $message);
 ?>
