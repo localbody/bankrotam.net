@@ -1,5 +1,10 @@
 var formValid = false
 var isLastQuestion = false
+var arrQuestions = []
+var arrAnswers = []
+
+console.log(arrQuestions, arrAnswers)
+
 
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
@@ -207,10 +212,12 @@ $(".quiz__form-btn-next").click(function (e) {
 
     } else {
         // собираем ответы
-        questionText = $(".quiz__title").html()
-        questionAnswer = $("input:checked.check__input").html()
+        let questionText = $(".quiz__title").html()
+        let questionAnswer = $("input:checked.check__input").html()
         
-        console.log(questionText, questionAnswer)
+        localStorage.setItem('q'+question.toString(), questionText)
+        localStorage.setItem('a'+question.toString(), questionAnswer)
+
     }
 
     isLastQuestion = false
