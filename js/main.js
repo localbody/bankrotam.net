@@ -216,6 +216,10 @@ $(".quiz__form-btn-next").click(function (e) {
         // собираем ответы
         let questionText = $(".quiz__title").html()
         let questionAnswer = $("input:checked.check__input").parent().find(".quiz__answers-text").html()
+
+        if (typeof questionAnswer != "undefined") {
+            questionAnswer = $(".quiz--input").val()
+        }
         
         localStorage.setItem("q"+question.toString(), questionText)
         localStorage.setItem("a"+question.toString(), questionAnswer)
@@ -228,9 +232,9 @@ $(".quiz__form-btn-next").click(function (e) {
 
         for (let index = 1; index <= questions; index++) {
             
-            allQuestionsAnswers += localStorage.getItem("q"+index.toString()).trim() + "\n"
-            allQuestionsAnswers += localStorage.getItem("a"+index.toString()).trim() + "\n"
-            allQuestionsAnswers += "----------------------------------------------------\n"
+            allQuestionsAnswers += index.toString() + ". " + localStorage.getItem("q"+index.toString()).trim() + "\n"
+            allQuestionsAnswers += "- " + localStorage.getItem("a"+index.toString()).trim() + "\n"
+            allQuestionsAnswers += "\n"
 
         }
 
