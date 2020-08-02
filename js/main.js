@@ -217,7 +217,7 @@ $(".quiz__form-btn-next").click(function (e) {
         let questionText = $(".quiz__title").html()
         let questionAnswer = $("input:checked.check__input").parent().find(".quiz__answers-text").html()
 
-        if (typeof questionAnswer != "undefined") {
+        if (typeof questionAnswer == "undefined") {
             questionAnswer = $(".quiz--input").val()
         }
         
