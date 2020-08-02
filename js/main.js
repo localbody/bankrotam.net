@@ -1,11 +1,22 @@
 var formValid = false
 var isFirstQuestion = false
 var isLastQuestion = false
-var arrQuestions = []
-var arrAnswers = []
 
-$(window).resize(function(){
-    $("body").css("max-width", $("html").width())
+
+function setViewport() {
+    if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1		
+        var dpt = 1
+        var widthM = window.screen.width * dpt
+        var widthH = window.screen.height * dpt
+        document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">')
+    } 
+}
+
+setViewport()
+
+$( window ).on( "orientationchange", function( event ) {
+    // $( "#orientation" ).text( "This device is in " + event.orientation + " mode!" )
+    // setViewport()
 })
 
 
