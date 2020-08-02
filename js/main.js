@@ -237,7 +237,7 @@ $(".quiz__form-btn-next").click(function (e) {
         message = allQuestionsAnswers
 
         $.post(
-            "../sendquiz.php",
+            "../../sendquiz.php",
             {
                 message
             },
