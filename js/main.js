@@ -226,16 +226,12 @@ $(".quiz__form-btn-next").click(function (e) {
 
     if (isLastQuestion) {
         //отправляем форму
-        console.log('ready')
-
         let allQuestionsAnswers = "";
 
         for (let index = 1; index <= questions; index++) {
-            
             allQuestionsAnswers += index.toString() + ". " + localStorage.getItem("q"+index.toString()).trim() + "\n"
             allQuestionsAnswers += "- " + localStorage.getItem("a"+index.toString()).trim() + "\n"
             allQuestionsAnswers += "\n"
-
         }
 
         message = allQuestionsAnswers
@@ -256,10 +252,8 @@ $(".quiz__form-btn-next").click(function (e) {
             $("body").addClass("noscroll")
           }    
                 
-        console.log(allQuestionsAnswers)
-
         e.preventDefault()
-
+        window.location.replace("https://bankrotam.net/");
     }
 
 })

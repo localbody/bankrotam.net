@@ -210,7 +210,7 @@
                     '. $value->question .'
                   </h2>
                                   
-                  <form action="index.php" class="quiz__form">
+                  <form action="index.php" class="quiz__form" method="post">
                     <input type="hidden" name="question" id="question" value="'.($numberQuestion + 1). '">
                     <input type="hidden" name="questions" id="questions" value="34">
                 
