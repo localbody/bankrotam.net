@@ -215,11 +215,7 @@ $(".quiz__form-btn-next").click(function (e) {
 
     isLastQuestion = false
 
-}
-
-
-
-
+})
 
 const href = document.location.href
 const anchor = href.substr(href.lastIndexOf('?') + 1, 8)
