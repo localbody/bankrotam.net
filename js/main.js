@@ -216,21 +216,35 @@ if (question == questions)
 
 $(".quiz__form-btn-next").click(function (e) {
     //
-
-    if (isLastQuestion) {
-        //отправляем форму
-        console.log('ready')
-    } else {
         // собираем ответы
         let questionText = $(".quiz__title").html()
         let questionAnswer = $("input:checked.check__input").parent().find(".quiz__answers-text").html()
         
-        localStorage.setItem('q'+question.toString(), questionText)
-        localStorage.setItem('a'+question.toString(), questionAnswer)
+        localStorage.setItem("q"+question.toString(), questionText)
+        localStorage.setItem("a"+question.toString(), questionAnswer)
+
+    if (isLastQuestion) {
+        //отправляем форму
+        console.log('ready')
+
+        let allQuestionsAnswers = "";
+
+        for (let index = 0; index <= questions; index++) {
+            
+            allQuestionsAnswers = localStorage.getItem("q"+index.toString()) + "\r\n"
+            allQuestionsAnswers = localStorage.getItem("a"+index.toString()) + "\r\n"
+            allQuestionsAnswers = "\r\n"
+
+        }
+
+        console.log(allQuestionsAnswers)
+
+        e.preventDefault()
+    }
 
     }
 
-    isLastQuestion = false
+    
 
 })
 
