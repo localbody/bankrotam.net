@@ -14,12 +14,9 @@
     // Сообщение
     $message = "$name\r\n$phone\r\n$summa\r\n$text";
     // На случай если какая-то строка письма длиннее 70 символов мы используем wordwrap()
-    $message = wordwrap($message, 70, "\r\n");
+    // $message = wordwrap($message, 70, "\r\n");
 
     // Отправляем
-    
-    // mail("noreply@bankrotam.net", $subject, $message);
+    mail("noreply@bankrotam.net", $subject, $message);
     mail("localbody@gmail.com", $subject, $message);
-
-    // echo $name . " - " . $phone . " - " . $summa . " - " . $text . " - " . $subject ;
 ?>

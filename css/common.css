@@ -450,7 +450,7 @@ input[type="text"] {
     /* opacity: 0; */
     /* pointer-events: none; */
     transform: translateX(100%);
-    overflow-x: auto;
+    overflow-y: auto;
 }
 
 @media (min-width: 1440px) {
