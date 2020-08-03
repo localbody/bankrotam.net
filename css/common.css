@@ -1076,6 +1076,10 @@ input[type="text"] {
     margin-bottom: 60px;
 }
 
+.submenu__two {
+    margin-top: 25px;
+}
+
 @media (min-width: 1440px) {
     .submenu {
         width: 700px;

@@ -146,7 +146,7 @@
 
 .check__border {
     fill: none;
-    stroke-width: 1px;
+    stroke-width: 3px;
     stroke: #E6E6EC;
 }
 
@@ -169,6 +169,11 @@
     }
 }
 
+.quiz__form-btn-next {
+    width: 100%;
+    display: inline-block;
+}
+
 @media (min-width: 1440px) {
     .quiz__form-btn-next {
         width: 313px;
@@ -186,11 +191,13 @@
     text-decoration: none;
     margin-top: 35px;
     display: block;
+    text-align: center;
 }
 
 @media (min-width: 1440px) {
     .back {
         margin-top: 0;
+        text-align: left;
     }    
 }
 

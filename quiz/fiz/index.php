@@ -167,7 +167,7 @@
             </div>
 
             <div class="submenu">
-                <ul>
+                <ul class="submenu__one">
                     <li class="submenu--item">
                         <a class="submenu--link" href="../../fiz/">Физическим лицам</a>
                     </li>
@@ -184,7 +184,7 @@
                         <a class="submenu--sublink" href="../../fiz/cena/">Цена банкротства</a>
                     </li>
                 </ul>
-                <ul>
+                <ul class="submenu__two">
                     <li class="submenu--item">
                         <a class="submenu--link" href="../../ur/">Юридическим лицам</a>
                     </li>
