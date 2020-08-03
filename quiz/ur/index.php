@@ -27,14 +27,19 @@
             </div>
 
             <hr class="menu-line">
-                <button class="header__menu-btn">
-                <img class="header__menu--logo" src="../../images/logo.svg" />
-                Bankrotam.net
-            </button>
+
+            <div class="header__menu-wrapper">
+                <button class="header__menu-btn"></button>
+                <a class="header__menu--logo-link" href="">
+                    <img class="header__menu--logo" src="./images/logo.svg" />
+                    Bankrotam.net
+                </a>    
+            </div>
             <div class="phone-and-whatapp">
                 <a class="icon-phone" href="tel:+74951288974"></a>
                 <a class="icon-whatsapp" href="https://api.whatsapp.com/send?phone=79774222116"></a>
             </div>
+
             <nav class="header__menu">
                 <ul class="menu__items">
                     <li class="menu__item main--link">
