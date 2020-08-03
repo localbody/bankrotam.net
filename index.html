@@ -15,12 +15,6 @@
 
     <script type="application/ld+json" class="aioseop-schema">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://bankrotam.net/#organization","url":"https://bankrotam.net/","name":"Банкротство в Москве","sameAs":[]},{"@type":"WebSite","@id":"https://bankrotam.net/#website","url":"https://bankrotam.net/","name":"Банкротство в Москве","publisher":{"@id":"https://bankrotam.net/#organization"},"potentialAction":{"@type":"SearchAction","target":"https://bankrotam.net/?s={search_term_string}","query-input":"required name=search_term_string"}},{"@type":"WebPage","@id":"https://bankrotam.net#webpage","url":"https://bankrotam.net","inLanguage":"ru-RU","name":"Банкротство в Москве","isPartOf":{"@id":"https://bankrotam.net/#website"},"breadcrumb":{"@id":"https://bankrotam.net#breadcrumblist"},"description":"Полная информация о банкротстве физических и юридических лиц в Москве 2020, федеральный закон, процедура и цены. Официальный сайт компании, помогающей снять обязательства по кредитам на практике. Ищите кто может помочь провести процедуру банкротства под ключ? Обращайтесь!","datePublished":"2020-05-22T10:54:15+03:00","dateModified":"2020-05-22T16:11:39+03:00","about":{"@id":"https://bankrotam.net/#organization"}},{"@type":"BreadcrumbList","@id":"https://bankrotam.net#breadcrumblist","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://bankrotam.net/","url":"https://bankrotam.net/","name":"Банкротство физических и юридических лиц в Москве"}}]}]}</script>
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -43,7 +37,16 @@
                 </p>
             </div>
             <hr class="menu-line">
-            <button class="header__menu-btn">Меню</button>
+
+            <button class="header__menu-btn">
+                <img class="header__menu--logo" src="./images/logo.svg" />
+                Bankrotam.net
+            </button>
+            <div class="phone-and-whatapp">
+                <a class="icon-phone" href="tel:+"></a>
+                <a class="icon-whatsapp" href=""></a>
+            </div>
+            
             <nav class="header__menu">
                 <ul class="menu__items">
                     <li class="menu__item main--link">
@@ -73,6 +76,8 @@
                 <a class="btn bg--blue btn__header" href="./quiz/fiz/">Оставить заявку</a>
             </nav>
             <div class="header__social">
+
+                <!--  -->
 
                 <div class="header__social-wrapper">
                     <a class="header__social-phone" href="tel:+74951288974">+7 495 128 89 74</a>
@@ -1326,7 +1331,7 @@
     </div>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/package/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
 
     <script>
         var swiper = new Swiper('.swiper-container', {

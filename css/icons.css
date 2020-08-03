@@ -59,6 +59,29 @@
     flex-shrink: 0;
 }
 
+.icon-whatsapp {
+    background-image: url(../images/whatsapp.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    display: block;
+    flex-shrink: 0;
+    margin-left: 25px;
+}
+
+.icon-phone {
+    background-image: url(../images/phone.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 23px;
+    height: 23px;
+    display: block;
+    flex-shrink: 0;
+}
+
 .icon-cancel {
     background-image: url(../images/cancel.svg);
     background-repeat: no-repeat;
