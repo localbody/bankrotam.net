@@ -290,6 +290,6 @@ const anchor = href.substr(href.lastIndexOf('?') + 1, 8)
 
 // console.log(href, anchor)
 
-if (anchor == "question") {
+if (anchor == "toquestion") {
     $('html').animate({ scrollTop: $(".quiz").offset().top - 140 }, 300);
 }

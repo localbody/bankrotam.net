@@ -99,7 +99,7 @@
                     '. $value->description .'
                   </p>
                   
-                  <form action="index.php" class="quiz__form" method="post">
+                  <form action="index.php?toquestion" class="quiz__form" method="post">
                     <input type="hidden" name="question" id="question" value="'.($numberQuestion + 1). '">
                     <input type="hidden" name="questions" id="questions" value="6">
                 
