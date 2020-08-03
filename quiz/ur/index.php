@@ -28,7 +28,7 @@
 
             <hr class="menu-line">
                         <button class="header__menu-btn">
-                <img class="header__menu--logo" src="./images/logo.svg" />
+                <img class="header__menu--logo" src="../../images/logo.svg" />
                 Bankrotam.net
             </button>
             <div class="phone-and-whatapp">
