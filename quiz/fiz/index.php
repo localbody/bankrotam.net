@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body class="noscroll-x">
 
     <header class="header">
         <div class="header__container">
@@ -27,7 +27,14 @@
             </div>
 
             <hr class="menu-line">
-            <button class="header__menu-btn">Меню</button>
+                        <button class="header__menu-btn">
+                <img class="header__menu--logo" src="./images/logo.svg" />
+                Bankrotam.net
+            </button>
+            <div class="phone-and-whatapp">
+                <a class="icon-phone" href="tel:+74951288974"></a>
+                <a class="icon-whatsapp" href="https://api.whatsapp.com/send?phone=79774222116"></a>
+            </div>
             <nav class="header__menu">
                 <ul class="menu__items">
                     <li class="menu__item main--link">
@@ -101,10 +108,10 @@
             <div class="intro__wrapper--etc intro__wrapper--quiz">
                 <div class="intro__block">
                     <h1 class="intro__title intro__title--quiz">
-                        Подходит мне банкроство?
+                        Опросник на банкроство
                     </h1>
                     <p class="intro__subtitle intro__subtitle--quiz">
-                        Онлайн для физических лиц
+                        Пройдите опросник до конца
                     </p>
                 </div>
                 <div class="intro__btns-quiz">

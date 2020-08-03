@@ -44,7 +44,7 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-bottom: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 @media (min-width: 1440px) {
@@ -184,6 +184,14 @@
 .back {
     color: #9293A4;
     text-decoration: none;
+    margin-top: 35px;
+    display: block;
+}
+
+@media (min-width: 1440px) {
+    .back {
+        margin-top: 0;
+    }    
 }
 
 
