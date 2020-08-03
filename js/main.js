@@ -286,7 +286,7 @@ $(".quiz__form-btn-next").click(function (e) {
 })
 
 const href = document.location.href
-const anchor = href.substr(href.lastIndexOf('?') + 1, 8)
+const anchor = href.substr(href.lastIndexOf('?') + 1, 10)
 
 // console.log(href, anchor)
 
