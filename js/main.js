@@ -125,6 +125,27 @@ $(".form__btn").click(
                 // console.log(data)
                 $(".popup__thanks").addClass("open")
                 $("body").addClass("noscroll")
+
+                const whois = $(this).attr("data-ym")
+
+                switch (whois) {
+                    case "kontakty":
+                        ym(63276445,'reachGoal','kontakty')
+                        break;
+                    case "with_summa":
+                        ym(63276445,'reachGoal','with_summa')
+                        break;                
+                    case "":
+                        
+                        break;                
+                    case "":
+                        
+                        break;                
+                            
+
+                    default:
+                        break;
+                }
               }    
         }
 
@@ -244,7 +265,7 @@ if (question == questions)
 $(".quiz__form-btn-next").click(function (e) {
     //
         // чья форма
-        const whois = $(this).attr("id")
+        const whois = $(this).attr("data-ym")
 
         // собираем ответы
         let questionText = $(".quiz__title").html()
@@ -288,11 +309,11 @@ $(".quiz__form-btn-next").click(function (e) {
             $(".popup__thanks").addClass("open")
             $("body").addClass("noscroll")
 
-            if (whois == "btn-quiz-fiz") {
+            if (whois == "quiz-fiz") {
                 // console.log(whois)
                 ym(63276445,'reachGoal','quiz_fiz')
             }
-            if (whois == "btn-quiz-uz") {
+            if (whois == "quiz-uz") {
                 // console.log(whois)
                 ym(63276445,'reachGoal','quiz_ur')
             }
