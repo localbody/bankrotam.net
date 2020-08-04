@@ -253,9 +253,15 @@ $(".quiz__form-btn-next").click(function (e) {
 
         if (typeof questionAnswer == "undefined") {
             questionAnswer = $(".quiz--input").val()
+
+            if (typeof questionAnswer == "undefined") {
+                questionAnswer = "ответ НЕ указан"
+            }
         }
         
         localStorage.setItem("q"+question.toString(), questionText)
+
+        if 
         localStorage.setItem("a"+question.toString(), questionAnswer)
 
     if (isLastQuestion) {
