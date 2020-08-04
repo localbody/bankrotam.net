@@ -134,15 +134,10 @@ $(".form__btn").click(
                         break;
                     case "with_summa":
                         ym(63276445,'reachGoal','with_summa')
-                        break;                
-                    case "":
-                        
-                        break;                
-                    case "":
-                        
-                        break;                
-                            
-
+                        break;
+                    case "feedback":
+                        ym(63276445,'reachGoal','feedback')
+                        break;
                     default:
                         break;
                 }
