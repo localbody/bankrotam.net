@@ -23,6 +23,10 @@ html {
     outline: none;
 }
 
+.nolink {
+    cursor: default;
+}
+
 .noscroll {
     overflow: hidden;
 }

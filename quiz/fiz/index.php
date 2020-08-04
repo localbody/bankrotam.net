@@ -120,7 +120,7 @@
                     </p>
                 </div>
                 <div class="intro__btns-quiz">
-                    <p class="btn btn--intro btn--quiz bg--yellow">Для физ. лиц</p>
+                    <p class="btn btn--intro btn--quiz bg--yellow nolink">Для физ. лиц</p>
                     <a class="btn btn--intro btn--quiz bg--transparent" href="../ur/">Для юр. лиц</a>
                 </div>
             </div>
@@ -285,7 +285,7 @@
     gtag('config', 'UA-167992083-1');
     </script>
     <!-- /Google Analytics -->
-        
+
 </body>
 
 </html>

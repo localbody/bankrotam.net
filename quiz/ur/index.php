@@ -121,7 +121,7 @@
                 </div>
                 <div class="intro__btns-quiz">
                     <a class="btn btn--intro btn--quiz bg--transparent" href="../../quiz/fiz/">Для физ. лиц</a>
-                    <p class="btn btn--intro btn--quiz bg--yellow">Для юр. лиц</p>
+                    <p class="btn btn--intro btn--quiz bg--yellow nolink">Для юр. лиц</p>
                 </div>
             </div>
 
