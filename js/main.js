@@ -37,8 +37,10 @@ function isValidMail(email) {
 }
 
 function idValidPhone(phone) {
-    var re = /^\+[7]\d[\d\(\)\ -]{4,14}\d$/
-    var valid = re.test(phone)
+    // var re = /^\+[7]\d[\d\(\)\ -]{4,19}\d$/
+    // var valid = re.test(phone)
+    valid = (phone != "")
+        
     return valid
 }  
 
@@ -58,6 +60,7 @@ function idValidSumma(summa) {
 $(".form__btn").click(
     function(e) {
 
+
         e.preventDefault()
         // console.log( $(this).parent().find(".form__name").val() )
         const email = $(this).parent().find(".form__email").val()
@@ -65,7 +68,7 @@ $(".form__btn").click(
         const phone = $(this).parent().find(".phone").val()
         const summa = $(this).parent().find(".summa").val()
         const text  = $(this).parent().find(".form__textarea").val()
-        
+
         let errorMessage = ""
 
         if (typeof email != "undefined") {
@@ -198,7 +201,7 @@ const maxScroll = 1585 - $(document).width()
 
 $(".stages__items").on("mousewheel", function (event) {
 
-    console.log('mousewheel')
+    // console.log('mousewheel')
 
     var scrollLeft = $(".stages__items").scrollLeft()
     var scrollValue = scrollLeft - event.deltaY * event.deltaFactor;
@@ -209,7 +212,7 @@ $(".stages__items").on("mousewheel", function (event) {
 })
 
 $(".stages__items").scroll(function(){
-    console.log('scroll')
+    // console.log('scroll')
 })
 
 
