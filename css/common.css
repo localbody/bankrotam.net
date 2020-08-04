@@ -702,7 +702,7 @@ input[type="text"] {
     white-space: nowrap;
     color: #404159;
     text-decoration: none;
-    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 @media (min-width: 1440px) {
@@ -752,9 +752,9 @@ input[type="text"] {
 .social__list {
     display: flex;
     align-items: baseline;
-    padding: 0 10px;
+    padding-left: 20px;
     min-width: 160px;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .social__item {
