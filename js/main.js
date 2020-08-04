@@ -1,10 +1,9 @@
-ym(63276445,'reachGoal','quiz_ur')
-
-
 var formValid = false
 var isFirstQuestion = false
 var isLastQuestion = false
 
+ym(63276445,'reachGoal','quiz_ur')
+ym(63276445,'reachGoal','quiz_fiz')
 
 function setViewport() {
     if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1		
