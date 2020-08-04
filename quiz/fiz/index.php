@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Пройдите опросник и заполните форму чтобы мы смогли вам помочь. Дайте ответ на несколько вопросов и мы с вами свяжемся.">
     <title>Форма заполнения онлайн заявки на банкротство физического лица</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="../../css/common.css">
     <link rel="stylesheet" href="../../css/quiz.css">
 
