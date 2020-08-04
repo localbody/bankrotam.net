@@ -121,7 +121,7 @@
                 </div>
                 <div class="intro__btns-quiz">
                     <a class="btn btn--intro btn--quiz bg--transparent" href="../../quiz/fiz/">Для физ. лиц</a>
-                    <a class="btn btn--intro btn--quiz bg--yellow" href="../../quiz/ur/">Для юр. лиц</a>
+                    <p class="btn btn--intro btn--quiz bg--yellow">Для юр. лиц</p>
                 </div>
             </div>
 
@@ -285,7 +285,7 @@
     gtag('config', 'UA-167992083-1');
     </script>
     <!-- /Google Analytics -->
-        
+
 </body>
 
 </html>

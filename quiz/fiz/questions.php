@@ -71,7 +71,7 @@
     }
     ';
 
-    $numberQuestion = isset($_POST['question']) ? $_POST['question'] : 1;
+    $numberQuestion = isset($_GET['question']) ? $_GET['question'] : 1;
 
     $arrQuestions = json_decode($questons)->questions;
 
@@ -99,7 +99,7 @@
                     '. $value->description .'
                   </p>
                   
-                  <form action="index.php?toquestion" class="quiz__form" method="post">
+                  <form action="index.php?toquestion" class="quiz__form" method="get">
                     <input type="hidden" name="question" id="question" value="'.($numberQuestion + 1). '">
                     <input type="hidden" name="questions" id="questions" value="6">
                 

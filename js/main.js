@@ -286,11 +286,11 @@ $(".quiz__form-btn-next").click(function (e) {
             $("body").addClass("noscroll")
 
             if (whois == "btn-quiz-fiz") {
-                console.log(whois)
+                // console.log(whois)
                 ym(63276445,'reachGoal','quiz_fiz')
             }
             if (whois == "btn-quiz-uz") {
-                console.log(whois)
+                // console.log(whois)
                 ym(63276445,'reachGoal','quiz_ur')
             }
 
