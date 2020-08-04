@@ -259,18 +259,16 @@ $(".quiz__form-btn-next").click(function (e) {
             }
         }
         
-        localStorage.setItem("q"+question.toString(), questionText)
-
-        if 
-        localStorage.setItem("a"+question.toString(), questionAnswer)
+        localStorage.setItem("q"+question.toString(), questionText.trim())
+        localStorage.setItem("a"+question.toString(), questionAnswer.trim())
 
     if (isLastQuestion) {
         //отправляем форму
         let allQuestionsAnswers = "";
 
         for (let index = 1; index <= questions; index++) {
-            allQuestionsAnswers += index.toString() + ". " + localStorage.getItem("q"+index.toString()).trim() + "\n"
-            allQuestionsAnswers += "- " + localStorage.getItem("a"+index.toString()).trim() + "\n"
+            allQuestionsAnswers += index.toString() + ". " + localStorage.getItem("q"+index.toString()) + "\n"
+            allQuestionsAnswers += "- " + localStorage.getItem("a"+index.toString()) + "\n"
             allQuestionsAnswers += "\n"
         }
 
