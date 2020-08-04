@@ -13,7 +13,6 @@ function setViewport() {
 
 setViewport()
 
-
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
     // console.log(popup__error)
