@@ -245,7 +245,6 @@
     </div>
 
     <script src="../../js/jquery-3.5.1.min.js"></script>
-    <script src="../../js/main.js"></script>
 
     <script>
         (function(d, w, c) {
@@ -285,6 +284,9 @@
     gtag('config', 'UA-167992083-1');
     </script>
     <!-- /Google Analytics -->
+
+    <script src="../../js/main.js"></script>
+
 
 </body>
 
