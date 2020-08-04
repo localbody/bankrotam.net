@@ -7,23 +7,16 @@ function setViewport() {
         var dpt = 1
         var widthM = window.screen.width * dpt
         var widthH = window.screen.height * dpt
-        // document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">')
+        document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">')
     } 
 }
 
 setViewport()
 
-$( window ).on( "orientationchange", function( event ) {
-    // $( "#orientation" ).text( "This device is in " + event.orientation + " mode!" )
-    // setViewport()
-})
-
 
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
-
     // console.log(popup__error)
-
     popup__error.find(".popup__title").html(title)
     popup__error.find(".popup__subtitle").html(subtitle)
     popup__error.addClass("open")
@@ -211,25 +204,6 @@ $(".popup__close").click(function (e) {
         window.location.replace("https://bankrotam.net/");
     }
 })
-
-const maxScroll = 1585 - $(document).width()
-
-$(".stages__items").on("mousewheel", function (event) {
-
-    // console.log('mousewheel')
-
-    var scrollLeft = $(".stages__items").scrollLeft()
-    var scrollValue = scrollLeft - event.deltaY * event.deltaFactor;
-    $(".stages__items").scrollLeft(scrollValue)
-    if (scrollLeft > 0 && scrollLeft < maxScroll) {
-        event.preventDefault()
-    }
-})
-
-$(".stages__items").scroll(function(){
-    // console.log('scroll')
-})
-
 
 const question = $("#question").val() - 1
 const questions = $("#questions").val()
