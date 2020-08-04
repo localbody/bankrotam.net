@@ -244,6 +244,9 @@ if (question == questions)
 
 $(".quiz__form-btn-next").click(function (e) {
     //
+        // чья форма
+        const whois = $(this).attr("id")
+
         // собираем ответы
         let questionText = $(".quiz__title").html()
         let questionAnswer = $("input:checked.check__input").parent().find(".quiz__answers-text").html()
@@ -281,6 +284,16 @@ $(".quiz__form-btn-next").click(function (e) {
             // console.log(data)
             $(".popup__thanks").addClass("open")
             $("body").addClass("noscroll")
+
+            if (whois == "btn-quiz-fiz") {
+                console.log(whois)
+                ym(63276445,'reachGoal','quiz_fiz')
+            }
+            if (whois == "btn-quiz-uz") {
+                console.log(whois)
+                ym(63276445,'reachGoal','quiz_ur')
+            }
+
           }    
                 
         e.preventDefault()

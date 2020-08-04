@@ -145,7 +145,7 @@
                         ?>
 
                         <div class="quiz__form-block">
-                            <button class="btn bg--blue quiz__form-btn-next">Перейти к следующему вопросу</button>
+                            <button class="btn bg--blue quiz__form-btn-next" id="btn-quiz-fiz">Перейти к следующему вопросу</button>
                             <a class="back" href="/">Вернуться на главную</a>
                         </div>
 
