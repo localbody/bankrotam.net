@@ -1,3 +1,7 @@
+ym(63276445,'reachGoal','quiz_ur')
+ym(63276445,'reachGoal','quiz_fiz')
+
+
 var formValid = false
 var isFirstQuestion = false
 var isLastQuestion = false
