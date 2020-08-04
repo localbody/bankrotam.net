@@ -1,7 +1,6 @@
-@import "../css/fonts/raleway/raleway.css";
 @import "../css/reset.css";
 @import "../css/normalize.css";
-@import "../css/fonts.css";
+/* @import "../css/fonts.css"; */
 @import "../css/icons.css";
 @import "../css/colors.css";
 
@@ -68,7 +67,6 @@ body {
     font-style: normal;
     font-size: 16px;
     line-height: 24px;
-    /* font-family: 'Raleway', 'Times New Roman', Times, serif; */
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 400;
