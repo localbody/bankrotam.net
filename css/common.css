@@ -221,6 +221,7 @@ input[type="text"] {
     resize: none;
     padding: 18px 25px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .info-asteriks {
