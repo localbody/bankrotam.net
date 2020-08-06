@@ -120,6 +120,8 @@ $(".form__btn").click(
 
                 const whois = $(this).attr("data-ym")
 
+                console.log(whois)
+
                 switch (whois) {
                     case "kontakty":
                         ym(63276445,'reachGoal','kontakty')
@@ -232,9 +234,6 @@ if (question == questions)
 
 $(".quiz__form-btn-next").click(function (e) {
     //
-        // чья форма
-        const whois = $(this).attr("data-ym")
-
         // собираем ответы
         let questionText = $(".quiz__title").html()
         let questionAnswer = $("input:checked.check__input").parent().find(".quiz__answers-text").html()
@@ -276,6 +275,11 @@ $(".quiz__form-btn-next").click(function (e) {
             // console.log(data)
             $(".popup__thanks").addClass("open")
             $("body").addClass("noscroll")
+
+            // чья форма
+            const whois = $(this).attr("data-ym")
+
+            console.log(whois)
 
             if (whois == "quiz-fiz") {
                 // console.log(whois)
