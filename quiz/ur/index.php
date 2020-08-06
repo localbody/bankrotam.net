@@ -249,16 +249,16 @@
 
     <noscript><div><img src="https://mc.yandex.ru/watch/63276445" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 
-    <script src="../js/load-min.js"></script>
+    <script src="../../js/load-min.js"></script>
     
     <script>
         defer(5000)
-        .thenLoad('../js/chatra.js')
-        .thenLoad('../js/gtag.js')
-        .thenLoad('../js/counters.js')
-        .thenLoad('../js/jquery-3.5.1.min.js')
-        .thenLoad('../js/jquery.maskedinput.min.js')
-        .thenLoad('../js/main.js');
+        .thenLoad('../../js/chatra.js')
+        .thenLoad('../../js/gtag.js')
+        .thenLoad('../../js/counters.js')
+        .thenLoad('../../js/jquery-3.5.1.min.js')
+        .thenLoad('../../js/jquery.maskedinput.min.js')
+        .thenLoad('../../js/main.js');
     </script>
     
     <script>
