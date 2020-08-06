@@ -5,15 +5,20 @@ var isLastQuestion = false
 $(function() {
     $(".phone").mask("+7 (999) 999-99-99");
   });
-  
-var swiper = new Swiper('.swiper-container', {
-slidesPerView: 'auto',
-spaceBetween: 0,
-pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-},
-});  
+
+try {
+    var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    })
+}
+catch {
+
+}
 
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
