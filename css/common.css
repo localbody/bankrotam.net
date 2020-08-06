@@ -795,7 +795,8 @@ input[type="text"] {
         height: 650px;
         background-position-x: right;
         background-position-y: bottom;
-        background-size: auto 500px;
+        background-size: auto 650px;
+        background-image: url(../images/bg-human.svg), radial-gradient(57.92% 117.24% at 73.89% 42.08%, #3D41A2 0%, rgba(35, 39, 128, 0) 100%);
     }
 }
 
