@@ -51,6 +51,7 @@ function idValidSumma(summa) {
 $(".form__btn").click(
     function(e) {
 
+        const whois = $(this).data("ym")
 
         e.preventDefault()
         // console.log( $(this).parent().find(".form__name").val() )
@@ -117,8 +118,6 @@ $(".form__btn").click(
                 // console.log(data)
                 $(".popup__thanks").addClass("open")
                 $("body").addClass("noscroll")
-
-                const whois = $(this).data("ym")
 
                 console.log($(this), whois)
 
@@ -234,6 +233,10 @@ if (question == questions)
 
 $(".quiz__form-btn-next").click(function (e) {
     //
+
+        // чья форма
+        const whois = $(this).data("ym")
+        
         // собираем ответы
         let questionText = $(".quiz__title").html()
         let questionAnswer = $("input:checked.check__input").parent().find(".quiz__answers-text").html()
@@ -275,9 +278,6 @@ $(".quiz__form-btn-next").click(function (e) {
             // console.log(data)
             $(".popup__thanks").addClass("open")
             $("body").addClass("noscroll")
-
-            // чья форма
-            const whois = $(this).data("ym")
 
             console.log(whois)
 
