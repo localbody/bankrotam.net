@@ -120,7 +120,7 @@ $(".form__btn").click(
 
                 const whois = $(this).data("ym")
 
-                console.log(whois)
+                console.log($(this), whois)
 
                 switch (whois) {
                     case "kontakty":
