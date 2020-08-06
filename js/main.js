@@ -2,9 +2,7 @@ var formValid = false
 var isFirstQuestion = false
 var isLastQuestion = false
 
-$(function() {
-    $(".phone").mask("+7 (999) 999-99-99");
-  });
+$(".phone").mask("+7 (999) 999-99-99")
 
 try {
     var swiper = new Swiper('.swiper-container', {
