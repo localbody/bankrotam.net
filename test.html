@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="yandex-verification" content="101717ec14f854e9" />
@@ -1353,5 +1354,14 @@
     </script>
 
 </body>
+
+<script>
+    if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1		
+        var dpt = 1
+        var widthM = window.screen.width * dpt
+        var widthH = window.screen.height * dpt
+        document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">')
+    } 
+</script>
 
 </html>

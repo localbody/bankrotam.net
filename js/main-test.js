@@ -3,9 +3,9 @@ var isFirstQuestion = false
 var isLastQuestion = false
 
 $(function() {
-  $(".phone").mask("+7 (999) 999-99-99");
-});
-
+    $(".phone").mask("+7 (999) 999-99-99");
+  });
+  
 var swiper = new Swiper('.swiper-container', {
 slidesPerView: 'auto',
 spaceBetween: 0,
@@ -13,18 +13,7 @@ pagination: {
     el: '.swiper-pagination',
     clickable: true,
 },
-});
-
-function setViewport() {
-    if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1		
-        var dpt = 1
-        var widthM = window.screen.width * dpt
-        var widthH = window.screen.height * dpt
-        document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">')
-    } 
-}
-
-setViewport()
+});  
 
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
@@ -64,6 +53,7 @@ function idValidSumma(summa) {
 $(".form__btn").click(
     function(e) {
 
+        const whois = $(this).data("ym")
 
         e.preventDefault()
         // console.log( $(this).parent().find(".form__name").val() )
@@ -126,12 +116,9 @@ $(".form__btn").click(
                
               function onAjaxSuccess(data)
               {
-                // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-                // console.log(data)
+
                 $(".popup__thanks").addClass("open")
                 $("body").addClass("noscroll")
-
-                const whois = $(this).attr("data-ym")
 
                 switch (whois) {
                     case "kontakty":
@@ -245,8 +232,9 @@ if (question == questions)
 
 $(".quiz__form-btn-next").click(function (e) {
     //
+
         // чья форма
-        const whois = $(this).attr("data-ym")
+        const whois = $(this).data("ym")
 
         // собираем ответы
         let questionText = $(".quiz__title").html()
@@ -285,8 +273,7 @@ $(".quiz__form-btn-next").click(function (e) {
            
           function onAjaxSuccess(data)
           {
-            // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-            // console.log(data)
+
             $(".popup__thanks").addClass("open")
             $("body").addClass("noscroll")
 
