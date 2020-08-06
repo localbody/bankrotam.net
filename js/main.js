@@ -2,16 +2,18 @@ var formValid = false
 var isFirstQuestion = false
 var isLastQuestion = false
 
-function setViewport() {
-    if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1		
-        var dpt = 1
-        var widthM = window.screen.width * dpt
-        var widthH = window.screen.height * dpt
-        document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">')
-    } 
-}
-
-setViewport()
+$(function() {
+    $(".phone").mask("+7 (999) 999-99-99");
+  });
+  
+var swiper = new Swiper('.swiper-container', {
+slidesPerView: 'auto',
+spaceBetween: 0,
+pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+},
+});  
 
 function showError( title , subtitle  ) {
     const popup__error = $(".popup__error")
@@ -114,8 +116,7 @@ $(".form__btn").click(
                
               function onAjaxSuccess(data)
               {
-                // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-                // console.log(data)
+
                 $(".popup__thanks").addClass("open")
                 $("body").addClass("noscroll")
 
@@ -272,8 +273,7 @@ $(".quiz__form-btn-next").click(function (e) {
            
           function onAjaxSuccess(data)
           {
-            // Здесь мы получаем данные, отправленные сервером и выводим их на экран.
-            // console.log(data)
+
             $(".popup__thanks").addClass("open")
             $("body").addClass("noscroll")
 
