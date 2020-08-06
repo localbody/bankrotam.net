@@ -118,7 +118,7 @@ $(".form__btn").click(
                 $(".popup__thanks").addClass("open")
                 $("body").addClass("noscroll")
 
-                const whois = $(this).attr("data-ym")
+                const whois = $(this).data("ym")
 
                 console.log(whois)
 
@@ -277,7 +277,7 @@ $(".quiz__form-btn-next").click(function (e) {
             $("body").addClass("noscroll")
 
             // чья форма
-            const whois = $(this).attr("data-ym")
+            const whois = $(this).data("ym")
 
             console.log(whois)
 
